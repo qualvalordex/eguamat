@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script type="text/javascript" src="javaS1.js"></script>
+  <script type="text/javascript" src="javaS2.js"></script>
+  <script type="text/javascript" src="javaS3.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+  <meta charset="utf-8" />
+  <style>
+    body {
+      background-color: grey;
+    }
+    .input {
+      background-color: dimgrey;
+      width: 1000px;
+      height: 20px;
+      border: none;
+      font-size: 16px;
+      resize: none;
+      margin-left: 10px;
+      margin-right: 10px;
+      overflow: hidden;
+    }
+    .output {
+      background-color: dimgrey;
+      width: 1000px;
+      border: none;
+      font-size: 16px;
+      resize: none;
+      overflow-wrap: break-word;
+      overflow: auto;
+      margin-left: 10px;
+      margin-right: 10px;
+    }
+    .matrix {
+      text-align: center;
+      border-collapse: collapse;
+      border: 1px solid black;
+    }
+    .matrix tr,td { border: 1px solid black; }
+    #calc {
+      background-color: lightslategrey;
+      border: solid {border-style: solid;};
+      height: 380px;
+      overflow: auto;
+      display: inline-block;
+      padding: 10px;
+      margin-bottom: 10px;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+  <table align="center">
+    <tr>
+      <td id="calc"></td>
+    </tr>
+  </table>
+  <script>   CreateInputDiv();   </script>
+</body>
+</html>
