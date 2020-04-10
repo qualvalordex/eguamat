@@ -1,21 +1,36 @@
 <!DOCTYPE html>
-<html>
+<html xmlns:https="http://www.w3.org/1999/xhtml">
 <head>
-  <script type="text/javascript" src="javaS1.js"></script>
-  <script type="text/javascript" src="javaS2.js"></script>
-  <script type="text/javascript" src="javaS3.js"></script>
+  <script type="text/javascript" src="js/javaS1.js"></script>
+  <script type="text/javascript" src="js/javaS2.js"></script>
+  <script type="text/javascript" src="js/javaS3.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
   <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
   <meta charset="utf-8" />
+  <link rel="stylesheet" type="text/css" href="3dButton.css">
+
+  <div class="img">
+    <img src="images/eg1.png" style="width:200px;height: auto;">
+  </div>
+
+  <div>
+    <script async src="js/rocketLaunch.js"></script>
+    <a href="" class="img">
+      <span class="btn-liquid" src="js/rocketLaunch.js" style="width:1150px;height: 10px;"></span>
+    </a>
+  </div>
+
+
   <style>
     body {
-      background-color: grey;
+      background-color: #3c3f41;/*#4000C1;*/
     }
+
     .input {
-      background-color: dimgrey;
+      background-color: #CC99FF;
       width: 1000px;
       height: 20px;
-      border: none;
+      border: 1px solid #3C3C3C;
       font-size: 16px;
       resize: none;
       margin-left: 10px;
@@ -23,40 +38,105 @@
       overflow: hidden;
     }
     .output {
-      background-color: dimgrey;
+      background-color: #D29858;
       width: 1000px;
-      border: none;
+      border: 1px solid #6C6C6C;
       font-size: 16px;
-      resize: none;
+      resize: both;
       overflow-wrap: break-word;
       overflow: auto;
       margin-left: 10px;
       margin-right: 10px;
+      margin-bottom: 20px;
     }
     .matrix {
       text-align: center;
       border-collapse: collapse;
-      border: 1px solid black;
+      border: 1px #D29858;
     }
-    .matrix tr,td { border: 1px solid black; }
+    .matrix tr,td { border: 1px #D29858; }
     #calc {
-      background-color: lightslategrey;
-      border: solid {border-style: solid;};
-      height: 380px;
+      background-color: #2b2b2b;
+      border: 2px solid #FF9933;
+      height: 800px;
       overflow: auto;
       display: inline-block;
       padding: 10px;
       margin-bottom: 10px;
       margin-top: 10px;
     }
+    .btn-group button {
+      background-color: #D29858; /* Green background */
+      border: 1px solid white; /* Green border */
+      color: white; /* White text */
+      padding: 10px 24px; /* Some padding */
+      cursor: pointer; /* Pointer/hand icon */
+      float: left; /* Float the buttons side by side */
+      display: inline-block;
+      position: center;
+      margin-left: 10px;
+      margin-right: 1px;
+      border-radius: 8px;
+      box-shadow: 10px 10px 10px 10px rgba(0,0,0,0.10), 10px 10px 10px 10px rgba(0,0,0,0.60);
+
+    }
+
+    .btn-group button:last-child {
+      border-right: 1px solid white; /* Prevent double borders */
+      border-left: 1px solid white; /* Prevent double borders */
+      margin-left: 640px;
+
+
+    }
+    .btn-group button:first-child {
+      border-right: 1px solid white; /* Prevent double borders */
+      border-left: 1px solid white; /* Prevent double borders */
+      margin-left: 100px;
+
+
+    }
+
+    /* Clear floats (clearfix hack) */
+    .btn-group:after {
+      content: "";
+      clear: both;
+      display: table;
+
+    }
+
+    /* Add a background color on hover */
+    .btn-group button:hover {
+      background-color: #9966CC;
+    }
+
+    img {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 40%;
+    }
+    .center {
+      padding: 70px 0;
+      border: 3px solid green;
+      text-align: center;
+    }
   </style>
 </head>
 <body>
-  <table align="center">
-    <tr>
-      <td id="calc"></td>
-    </tr>
-  </table>
-  <script>   CreateInputDiv();   </script>
+
+<div class="btn-group" >
+  <button href="something" class="button4" onclick="limpar();" style="background-color:#9a4ef1" onclick="ajuda()">Limpar</button>
+  <button href="something" class="button4" onclick="salvar();" style="background-color:#f14ebd">Salvar</button>
+  <button href="something" class="button4" onclick="carregar();" style="background-color:#f1bb4e">Carregar</button>
+  <button href="something" class="button4" onclick="window.location.href = 'https://castanhal.ifpa.edu.br';" style="background-color:#f14e4e">Ajuda</button>
+
+</div>
+
+<table align="center">
+  <tr>
+    <td id="calc"></td>
+  </tr>
+</table>
+<script>   CreateInputDiv();   </script>
 </body>
 </html>

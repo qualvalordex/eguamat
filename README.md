@@ -1,21 +1,21 @@
 # JavaScript_without_HTML
 A basic JavaScript command execution web editor where you can run your own user defined JavaScript functions from. The editor currently has 34 user defined functions on top of the functions required to get the web editor to work: 
 
-1) Function help() gives you command help
-2) Function example() gives you a worksheet with all working functions. This function will clear everything previously entered
+1) Função ajuda() gives you command help
+2) Function exemplo() gives you a worksheet with all working functions. This function will clear everything previously entered
 3) Function rand(n1,n2,e) returns an array with dimensions n1 and n2 and with random numbers and expected value e
 4) Function round(x,z) rounds a number, 1D array or a 2D array x to z decimal points
 5) Function array(z) returns a javascript array from the function's parameters z
 6) Function rw(n) returns a 1D array with length n with a pure random walk
-7) Function seq(a,b) gives you a 1D array with data from a to b
+7) Function vet(a,b) gives you a 1D array with data from a to b
 8) Function count(a,b) counts the number of elements b in array a. If parameter b is not specified then the count of a is return
 9) Function ticker() gives you the ticker symbols for the 100 crypto currencies with the largest market cap
 10) Function time(w) converts a unix timestamp w to a date string 
 11) Function crypto(t) gives you historial crypto currency price data for a specified ticker symbol string t
 12) Function plot(z) gives you a plot of a 1D array z.
-13) Function clear() gives you a clean workspace
-14) Function save(x) where x is a file name that ends with .html in enclosed in a string will save a copy of the current workspace locally
-15) Function load() loads a html workspace file from a previous session
+13) Function limpar() gives you a clean workspace
+14) Function salvar(x) where x is a file name that ends with .html in enclosed in a string will save a copy of the current workspace locally
+15) Function carregar() loads a html workspace file from a previous session
 16) Function matrix(z) creates and displays a html table from a 1D or 2D dimensional array z and returns z
 17) Function matrixMult(a,b) multiplies two matrices a and b
 18) Function matrixInv(m) calculates the inverse of matrix m with gaussian elimination 
@@ -24,7 +24,7 @@ A basic JavaScript command execution web editor where you can run your own user 
 21) Function min(a) returns the minimum value of an array a
 22) Function range(a) calculates the range (max - min) of an array a
 23) Function median(a) calculates the median of an array a
-24) Function sum(a) calculates the sum of a given array a
+24) Function smtr(a) calculates the sum of a given array a
 25) Function ev(a) calculates the expected value (arithmetic mean) of an array a
 26) Function sse(array) calculates the sum of squared errors (sse) of an array
 27) Function variance(array, flag) calculates the variance of an array. If flag = 0 then population. If flag = 1 then sample
