@@ -135,11 +135,11 @@ function rand(n1,n2,e) {
       data[i][j] = e + Math.random() * 2 - 1;
     }
   }
-  return round(data,5);
+  return aprox(data,5);
 }
 
 // rounds a number, a 1D or a 2D array array x to z decimal points
-function round(x, z) {
+function aprox(x, z) {
   if (z == undefined) { z = 2; }
   console.log("type of = " + typeof (x));
   if (typeof (x) == "number") { x = x.toFixed(z) }
@@ -163,18 +163,18 @@ function array() {
   var data = Array.from(Array(1),() => new Array(n));
 // the benefit from creating array this way is a.length = number of rows and a[0].length = number of columns  
   for (var i = 0; i < n; i++) { data[0][i] = arguments[i];}
-  return matrix(data);
+  return matriz(data);
 }
 
 // an array with a random walk with expected value ex 
-function rw(n,ex) {
+function pale(n,ex) {
   if (ex == undefined) { ex = 0; }
   var x = [];
   x[0] = 100;
   for (var i = 1; i < n; i++) {
     x[i] = ex + x[i - 1] + Math.random() * 2 - 1;
   }
-  var xx = round(x, 2);
+  var xx = aprox(x, 2);
   console.log(xx);
   return xx;
 }
@@ -186,7 +186,7 @@ function vet(a, b) {
   for (var i = 0; i < data[0].length; i++) {
     data[0][i]= a + i;
   }
-  return matrix(data);
+  return matrizn(data);
 }
 
 // counts the number of elements b in a given array a

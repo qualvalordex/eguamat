@@ -1,40 +1,37 @@
 // gives you help regarding different functions.
 function ajuda() {
   var x =
-    "1) Function help() gives you command help" + "<br>" +
+    "1) Function ajuda() gives you command help" + "<br>" +
     "2) Function exemplo() gives you a worksheet with all working functions. This function will clear everything previously entered" + "<br>" +
     "3) Function rand(n1,n2,e) returns an array with dimensions n1 and n2 and with random numbers and expected value e" + "<br>" +
-    "4) Function round(x,z) rounds a number, 1D array or a 2D array x to z decimal points" + "<br>" +
-    "5) Function array(z) returns a javascript array from the function's parameters z" + "<br>" +
-    "6) Function rw(n) returns a 1D array with length n with a pure random walk" + "<br>" +
+    "4) Function aprox(x,z) rounds a number, 1D array or a 2D array x to z decimal points" + "<br>" +
+    "5) Function matrizn(z) returns a javascript array from the function's parameters z" + "<br>" +
+    "6) Function pale(n) returns a 1D array with length n with a pure random walk" + "<br>" +
     "7) Function vet(a,b) gives you a 1D array with data from a to b" + "<br>" +
-    "8) Function count(a,b) counts the number of elements b in array a. If parameter b is not specified then the count of a is return" + "<br>" +
-    "9) Function ticker() gives you the ticker symbols for the 100 crypto currencies with the largest market cap" + "<br>" +
-    "10) Function time(w) converts a unix timestamp w to a date string " + "<br>" +
-    "11) Function crypto(t) gives you historial crypto currency price data for a specified ticker symbol string t" + "<br>" +
+    "8) Function qtd(a,b) counts the number of elements b in array a. If parameter b is not specified then the count of a is return" + "<br>" +
     "12) Function plot(z) gives you a plot of a 1D array z." + "<br>" +
     "13) Function limpar() gives you a clean workspace" + "<br>" +
     "14) Function salvar(x) where x is a file name that ends with .html in enclosed in a string will save a copy of the current workspace locally" + "<br>" +
     "15) Function carregar() loads a html workspace file from a previous session" + "<br>" +
-    "16) Function matrix(z) creates and displays a html table from a 1D or 2D dimensional array z and returns z" + "<br>" +
-    "17) Function matrixMult(a,b) multiplies two matrices a and b" + "<br>" +
-    "18) Function matrixInv(m) calculates the inverse of matrix m with gaussian elimination " + "<br>" +
-    "19) Function matrixId(n) returns an identity matrix with n number of rows and columns" + "<br>" +
+    "16) Function matriz(z) creates and displays a html table from a 1D or 2D dimensional array z and returns z" + "<br>" +
+    "17) Function matrizmult(a,b) multiplies two matrices a and b" + "<br>" +
+    "18) Function matrizinv(m) calculates the inverse of matrix m with gaussian elimination " + "<br>" +
+    "19) Function matrizid(n) returns an identity matrix with n number of rows and columns" + "<br>" +
     "20) Function max(a) returns the maximum value of an array a" + "<br>" +
     "21) Function min(a) returns the minimum value of an array a" + "<br>" +
-    "22) Function range(a) calculates the range (max - min) of an array a" + "<br>" +
-    "23) Function median(a) calculates the median of an array a" + "<br>" +
+    "22) Function intervalo(a) calculates the range (max - min) of an array a" + "<br>" +
+    "23) Function mediana(a) calculates the median of an array a" + "<br>" +
     "24) Function smtr(a) calculates the sum of a given array a" + "<br>" +
-    "25) Function ev(a) calculates the expected value (arithmetic mean) of an array a" + "<br>" +
-    "26) Function sse(array) calculates the sum of squared errors (sse) of an array" + "<br>" +
-    "27) Function variance(array, flag) calculates the variance of an array. If flag = 0 then population. If flag = 1 then sample" + "<br>" +
-    "28) Function stdev(array, flag) calculates the standard deviation of an array. If flag = 0 then population. If flag = 1 then sample" + "<br>" +
-    "29) Function covariance(array1, array2) calculates the covariance of two arrays" + "<br>" +
-    "30) Function coeffvar(array) calculates the coefficient of variation for an array" + "<br>" +
-    "31) Function correlation(array1, array2) calculates the pearson's correlation coefficient for two arrays" + "<br>" +
-    "32) Function getColumn(a,c) gives you a specific column c from a 2D array a" + "<br>" +
-    "33) Function getRow(a,r) gives you a specific row r from a 2D array a" + "<br>" +
-    "34) Function transpose(a) gives you the transpose of a 1D row array, a 1D column array or a 2D array a" + "<br>" +
+    "25) Function ve(a) calculates the expected value (arithmetic mean) of an array a" + "<br>" +
+    "26) Function sqr(array) calculates the sum of squared errors (sse) of an array" + "<br>" +
+    "27) Function variancia(array, flag) calculates the variance of an array. If flag = 0 then population. If flag = 1 then sample" + "<br>" +
+    "28) Function devpad(array, flag) calculates the standard deviation of an array. If flag = 0 then population. If flag = 1 then sample" + "<br>" +
+    "29) Function covar(array1, array2) calculates the covariance of two arrays" + "<br>" +
+    "30) Function coefvar(array) calculates the coefficient of variation for an array" + "<br>" +
+    "31) Function coefcorr(array1, array2) calculates the pearson's correlation coefficient for two arrays" + "<br>" +
+    "32) Function coluna(a,c) gives you a specific column c from a 2D array a" + "<br>" +
+    "33) Function linha(a,r) gives you a specific row r from a 2D array a" + "<br>" +
+    "34) Function transposta(a) gives you the transpose of a 1D row array, a 1D column array or a 2D array a" + "<br>" +
     "Please note that an input that ends with : hiddes output from view" + "<br>" +
     "Please note that an input that starts with # is defined as text";
   return x;

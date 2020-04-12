@@ -1,5 +1,5 @@
 // displays a html table and returns a 1D or 2D array
-function matrix(z) {
+function matriz(z) {
   if (z[0].length == undefined) { // 1D array 
     var table = document.createElement('table');
     table.setAttribute("class", "matrix");
