@@ -15,7 +15,7 @@ Um editor Web básico de excução de comando JavaScript, no qual é possível e
 12. Function carregar() carrega um arquivo .html de uma sessão anteriormente salva
 13. Function matriz(z) cria e exibe uma tabela a partir de um vetor ou de uma matriz bidimensional z
 14. Function matrizmult(a,b) multiplica duas matrizes a e b
-15. Function matrizinv(m) calcula o inverso da matriz m a partir da elimincação de Gaus
+15. Function matrizinv(m) calcula o inverso da matriz m a partir da eliminação de Gaus
 16. Function matrizid(n) retorna uma matriz de identidade com n números de linhas e colunas
 17. Function max(a) retorna o valor máximo de uma matriz
 18. Function min(a) retorna o valor mínimo de uma matriz
@@ -31,7 +31,7 @@ Um editor Web básico de excução de comando JavaScript, no qual é possível e
 28. Function coefcorr(array1, array2) calcula o coeficiente de correlação de pearson para duas matrizes
 29. Function coluna(a,c) retorna uma coluna específica c de uma matriz bidimensional a
 30. Function linha(a,r) retorna uma coluna específica c de uma matriz bidimensional a
-31. Function transposta(a) retorna a transposta de linhas de um veotr, uma coluna de um vetor ou uma matriz bidimensional
+31. Function transposta(a) retorna a transposta de linhas de um vetor, uma coluna de um vetor ou uma matriz bidimensional
 
 
 Observe que uma entrada que termina com: oculta a visualização da saída
