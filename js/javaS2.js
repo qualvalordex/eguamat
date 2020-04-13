@@ -35,7 +35,7 @@ function matriz(z) {
 }
 
 // multiply two matricies a and b
-function matrixmult(a, b) {
+function matrizmult(a, b) {
   var data = [];  // maybe change this to array of array 
   console.log("a.length = " + a.length); 
   console.log("a[0].length = " + a[0].length); 
@@ -70,11 +70,11 @@ function matrixmult(a, b) {
       }
     }
   }
-  return matrix(round(data));
+  return matriz(aprox(data));
 }
 
 // calculates the inverse of matrix m with gaussian elimination 
-function matrixinv(m) {
+function matrizinv(m) {
   // if the matrix isn't square: exit (error)
   if (m.length !== m[0].length) { return "not a square matrix"; }
 
@@ -153,11 +153,11 @@ function matrixinv(m) {
     }
   }
   console.log(I);  // C should be the identity and matrix I should be the inverse:
-  return matrix(round(I, 2));
+  return matriz(aprox(I, 2));
 }
 
 // creates an identity matrix with n number of rows and columns
-function matrixid(n) {
+function matrizid(n) {
   var data = Array.from(Array(n), () => new Array(n));
   for (var i = 0; i < n; i++) {
     for (var j = 0; j < n; j++) {
@@ -165,7 +165,7 @@ function matrixid(n) {
       else { data[i][j] = 0; }
     }
   }
-  return matrix(data);
+  return matriz(data);
 }
 
 // returns the maximum value of an array a
@@ -197,26 +197,26 @@ function smtr(a) {
     for (var j = 0; j < a[0].length; j++) {z = z + a[0][j]; }
   }
   else if (a[0].length == 1) {   // a is a 1D column array
-   console.log("column array"); 
+   console.log("column array");
     for (var i = 0; i < a.length; i++) {z = z + a[i][0]; }
   }
   else {
     for (var j = 0; j < a.length; j++) {z = z + a[j]; }
   } 
   toggleOrCheckIfFunctionCall(false);  
-  return round(z,2);
+  return aprox(z,2);
 }
 
 // calculates the expected value (arithmetic mean) of an array
 function ve(a) {
-if(a.length == 1){return round(sum(a) / a[0].length,4);} // a is a row array
-if(a[0].length == 1){return round(sum(a) / a.length,4);} // a is a column array
-if(a[0].length == undefined){return round(sum(a) / a.length,4);}
+if(a.length == 1){return aprox(smtr(a) / a[0].length,4);} // a is a row array
+if(a[0].length == 1){return aprox(smtr(a) / a.length,4);} // a is a column array
+if(a[0].length == undefined){return aprox(smtr(a) / a.length,4);}
 }
 
 // calculates the sum of squared errors (sse) of an array
 function sqr(array) {
-  var mean = ev(array);
+  var mean = ve(array);
   var sum = 0;
   var i = array.length;
   var tmp;
@@ -230,19 +230,19 @@ function sqr(array) {
 // calculates the variance of an array. If flag = 0 then population. If flag = 1 then sample. 
 function variancia(array, flag) {
   if (flag == undefined) { flag = 1; }
-  return sse(array) / (array.length - (flag ? 1 : 0));
+  return sqr(array) / (array.length - (flag ? 1 : 0));
 };
 
 // calculates standard deviation of an array. If flag = 0 then population. If flag = 1 then sample. 
 function devpad(array, flag) {
   if (flag == undefined) { flag = 1; }
-  return round(Math.sqrt(variance(array, flag)));
+  return aprox(Math.sqrt(variancia(array, flag)));
 };
 
 // calculates the covariance of two arrays
 function covar(array1, array2) {
-  var u = ev(array1);
-  var v = ev(array2);
+  var u = ve(array1);
+  var v = ve(array2);
   var arr1Len = array1.length;
   var sq_dev = new Array(arr1Len);
   for (var i = 0; i < arr1Len; i++)
@@ -252,12 +252,12 @@ function covar(array1, array2) {
 
 // calculates the coefficient of variation for an array
 function coefvar(array) {
-  return stdev(array, 1) / ex(array);
+  return devpad(array, 1) / ex(array);
 };
 
 // calculates the pearson's correlation coefficient
 function coefcorr(array1, array2) {
-  return round(covariance(array1, array2) / stdev(array1, 1) / stdev(array2, 1));
+  return aprox(covar(array1, array2) / devpad(array1, 1) / devpad(array2, 1));
 };
 
 // gives you a specific column c from a 2D array a
@@ -266,7 +266,7 @@ function coluna(a, c) {
   for (var i = 0; i < a.length; i++) {
     column[i][0] = a[i][c - 1];
   }
-  return matrix(column);
+  return matriz(column);
 }
 
 // gives you a specific row r from a 2D array a
@@ -276,7 +276,7 @@ function linha(a, r) {
   for (var j = 0; j < a[0].length; j++) {
     row.push(a[r - 1][j]);
   }
-  return matrix(row);
+  return matriz(row);
 }
 
 // gives you the transpose of a 1D row array, a 1D column array or a 2D array a
@@ -305,5 +305,5 @@ function transposta(a) {
       }
     }
   }
-  return matrix(data);
+  return matriz(data);
 }
