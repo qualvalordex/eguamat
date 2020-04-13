@@ -1,5 +1,5 @@
 # MathEgua
-Um editor Web básico de excução de comando JavaScript, no qual é possível executar suas próprias funções. Atualmente o editor possui 34 funções definidas, são elas: 
+Um editor Web básico de excução de comando JavaScript, no qual é possível executar suas próprias funções. Atualmente o editor possui 31 funções definidas, são elas: 
 
 1. Function ajuda() retorna informações sobre o comando 
 2. Function exemplo() retorna lista de exemplos com algumas das funções. Está função limpará tudo o que foi inserido anteriormente
