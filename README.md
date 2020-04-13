@@ -15,7 +15,7 @@ Um editor Web básico de excução de comando JavaScript, no qual é possível e
 12. Function carregar() carrega um arquivo .html de uma sessão anteriormente salva
 13. Function matriz(z) cria e exibe uma tabela a partir de um vetor ou de uma matriz bidimensional z
 14. Function matrizmult(a,b) multiplica duas matrizes a e b
-15. Function matrizinv(m) calcula o inverso da matriz m a partir da eliminação de Gaus
+15. Function matrizinv(m) calcula o inverso da matriz m a partir da eliminação gaussiana
 16. Function matrizid(n) retorna uma matriz de identidade com n números de linhas e colunas
 17. Function max(a) retorna o valor máximo de uma matriz
 18. Function min(a) retorna o valor mínimo de uma matriz
