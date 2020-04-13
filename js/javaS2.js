@@ -35,7 +35,7 @@ function matriz(z) {
 }
 
 // multiply two matricies a and b
-function matrixMult(a, b) {
+function matrixmult(a, b) {
   var data = [];  // maybe change this to array of array 
   console.log("a.length = " + a.length); 
   console.log("a[0].length = " + a[0].length); 
@@ -74,7 +74,7 @@ function matrixMult(a, b) {
 }
 
 // calculates the inverse of matrix m with gaussian elimination 
-function matrixInv(m) {
+function matrixinv(m) {
   // if the matrix isn't square: exit (error)
   if (m.length !== m[0].length) { return "not a square matrix"; }
 
@@ -157,7 +157,7 @@ function matrixInv(m) {
 }
 
 // creates an identity matrix with n number of rows and columns
-function matrixId(n) {
+function matrixid(n) {
   var data = Array.from(Array(n), () => new Array(n));
   for (var i = 0; i < n; i++) {
     for (var j = 0; j < n; j++) {
@@ -179,19 +179,19 @@ function min(a) {
 }
 
 // calculates the range of an array a
-function range(a) {
+function intervalo(a) {
   return max(a) - min(a);
 }
 
 // calculates the median of an array a
-function median(a) {
+function mediana(a) {
   a.sort(function (a, b) { return a - b; });
   var mid = a.length / 2;
   return mid % 1 ? a[mid - 0.5] : (a[mid - 1] + a[mid]) / 2;
 }
 
 // calculates the sum of a given array a 
-function sum(a) {
+function smtr(a) {
   var z = 0 ;
   if (a.length == 1) {   // a is a 1D row array
     for (var j = 0; j < a[0].length; j++) {z = z + a[0][j]; }
@@ -208,14 +208,14 @@ function sum(a) {
 }
 
 // calculates the expected value (arithmetic mean) of an array
-function ev(a) {
+function ve(a) {
 if(a.length == 1){return round(sum(a) / a[0].length,4);} // a is a row array
 if(a[0].length == 1){return round(sum(a) / a.length,4);} // a is a column array
 if(a[0].length == undefined){return round(sum(a) / a.length,4);}
 }
 
 // calculates the sum of squared errors (sse) of an array
-function sse(array) {
+function sqr(array) {
   var mean = ev(array);
   var sum = 0;
   var i = array.length;
@@ -228,19 +228,19 @@ function sse(array) {
 };
 
 // calculates the variance of an array. If flag = 0 then population. If flag = 1 then sample. 
-function variance(array, flag) {
+function variancia(array, flag) {
   if (flag == undefined) { flag = 1; }
   return sse(array) / (array.length - (flag ? 1 : 0));
 };
 
 // calculates standard deviation of an array. If flag = 0 then population. If flag = 1 then sample. 
-function stdev(array, flag) {
+function devpad(array, flag) {
   if (flag == undefined) { flag = 1; }
   return round(Math.sqrt(variance(array, flag)));
 };
 
 // calculates the covariance of two arrays
-function covariance(array1, array2) {
+function covar(array1, array2) {
   var u = ev(array1);
   var v = ev(array2);
   var arr1Len = array1.length;
@@ -251,17 +251,17 @@ function covariance(array1, array2) {
 };
 
 // calculates the coefficient of variation for an array
-function coeffvar(array) {
+function coefvar(array) {
   return stdev(array, 1) / ex(array);
 };
 
 // calculates the pearson's correlation coefficient
-function correlation(array1, array2) {
+function coefcorr(array1, array2) {
   return round(covariance(array1, array2) / stdev(array1, 1) / stdev(array2, 1));
 };
 
 // gives you a specific column c from a 2D array a
-function getColumn(a, c) {
+function coluna(a, c) {
   var column = Array.from(Array(a.length), () => new Array(1));
   for (var i = 0; i < a.length; i++) {
     column[i][0] = a[i][c - 1];
@@ -270,7 +270,7 @@ function getColumn(a, c) {
 }
 
 // gives you a specific row r from a 2D array a
-function getRow(a, r) {
+function linha(a, r) {
   console.log(a[0].length);
   var row = [];
   for (var j = 0; j < a[0].length; j++) {
@@ -280,7 +280,7 @@ function getRow(a, r) {
 }
 
 // gives you the transpose of a 1D row array, a 1D column array or a 2D array a
-function transpose(a) {
+function transposta(a) {
   console.log("a.length = " + a.length); 
   console.log("a[0].length = " + a[0].length); 
 

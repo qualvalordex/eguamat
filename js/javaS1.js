@@ -157,7 +157,7 @@ function aprox(x, z) {
 }
 
 // creates an array from the functions's parameters 
-function array() {
+function matrizn() {
   n = arguments.length;
   console.log("n = " + n);
   var data = Array.from(Array(1),() => new Array(n));
@@ -190,7 +190,7 @@ function vet(a, b) {
 }
 
 // counts the number of elements b in a given array a
-function count(a, b) {
+function qtd(a, b) {
   if (b == undefined) {
     var count = a.length;
   } else {
@@ -201,62 +201,6 @@ function count(a, b) {
     }
   }
   return count;
-}
-
-// ticker symbols for the 100 crypto currencies with the largest market cap
-function ticker() {
-  var ApiKey = "ddd85b386e1a7c889e468a4933f75f22f52b0755b747bdb637ab39c88a3bc19b";
-  var urlA = "https://min-api.cryptocompare.com/data/top/mktcapfull?limit=100&tsym=USD&api_key=" + ApiKey;
-
-  var result = null;
-
-  $.ajax({
-    url: urlA,
-    async: false,   // makes a synchronous data call to cryptocompare's api
-    dataType: "json",
-    success: function (data) { result = data; }
-  });
-
-  var y = result.Data;
-  var A = [];
-  for (var i = 0; i < y.length; i++) {
-    A.push([y[i].CoinInfo.Name]);
-  }
-  console.log(A);
-  return A;
-}
-
-// converts a unix timestamp to a date string  
-function time(w) {
-  var MyDate = new Date(w * 1000);
-  var MyDateString = MyDate.getFullYear() + '-' + ('0' + (MyDate.getMonth() + 1)).slice(-2) + '-' + ('0' + MyDate.getDate()).slice(-2);
-  return JSON.stringify(MyDateString);
-}
-
-// historial crypto currency price data for a specified ticker symbol string
-function crypto(t) {
-  var ApiKey = "ddd85b386e1a7c889e468a4933f75f22f52b0755b747bdb637ab39c88a3bc19b";
-  var urlA = "https://min-api.cryptocompare.com/data/histoday?fsym=" + t + "&tsym=USD&limit=1000&api_key=" + ApiKey;
-
-  var result = null;
-
-  $.ajax({
-    url: urlA,
-    async: false,   // makes a synchrously data call to cryptocompare
-    dataType: "json",
-    success: function (data) { result = data; }
-  });
-
-  var y = result.Data;
-  var D1 = [];
-  var D2 = [];
-
-  for (var i = 0; i < y.length; i++) {
-    D1.push(time(y[i].time));
-    D2.push(y[i].close);
-  }
-  console.log(D2);
-  return D2;
 }
 
 // plots a given data array z 
