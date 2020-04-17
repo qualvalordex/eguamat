@@ -1,7 +1,7 @@
-# MathEgua
+# MatEgua
 
 ## Introdução
-breve texto aqui.
+O MatEgua, módulo originado a partir da linguagem Egua, é um instrumento para aplicações matemáticas e científicas. Essa ferramenta apresenta funções indispensáveis para a análise de dados e métodos para modelagem de fenômenos físicos.
 
 ## comandos
 
@@ -46,7 +46,11 @@ Observe que uma entrada que começa com # é definida como texto
 
 
 ### exemplo()
-A função exemplo() retorna amostras do uso de todas as funções existentes e a combinação entre elas. No exemplo-12 ocorre a plotagem dos valores de uma linha de matriz aleatória;
+A função exemplo() retorna amostras do uso de todas as funções existentes e a combinação entre elas. 
+O exemplo-8 mostra uma demostração de uma matriz transposta:
+![](images/exemplo8.PNG)
+
+No exemplo-12 ocorre a plotagem dos valores de uma linha de matriz aleatória;
     
     Exemplo 12: plot(linha(rand(10,5),2))
         rand(10,5) cria uma matriz aleatória X de 10 linha e 5 colunas;
