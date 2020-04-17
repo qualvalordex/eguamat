@@ -247,7 +247,7 @@ function covar(array1, array2) {
   var sq_dev = new Array(arr1Len);
   for (var i = 0; i < arr1Len; i++)
     sq_dev[i] = (array1[i] - u) * (array2[i] - v);
-  return sum(sq_dev) / (arr1Len - 1);
+  return smtr(sq_dev) / (arr1Len - 1);
 };
 
 // calculates the coefficient of variation for an array
