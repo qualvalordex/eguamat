@@ -8,14 +8,28 @@ O MatEgua, módulo originado a partir da linguagem Egua, é um instrumento para 
 ### ajuda()
 Este comando mostra todas as 31 funções disponiveis editor, são elas: 
 
-1. Função ajuda() retorna informações sobre o comando 
-2. Função exemplo() retorna lista de exemplos com algumas das funções. Está função limpará tudo o que foi inserido anteriormente
-3. Função rand(n1,n2,e) retorna uma matriz com dimensões n1 e n2 e com números aleatórios e valor esperado e
-4. Função aprox(x,z) aproxima um número, de um vetor ou uma matriz bidimensional de x a z casas decimais
-5. Função matrizn(z) retorna uma matriz javascript dos parâmetros da função z
-6. Função pale(n) retorna um vetor com comprimento n com uma caminhada aleatória pura
-7. Função vet(a,b) retorna um vetor com dados de a até b
-8. Função qtd(a,b) conta o número de elementos b na matriz a. Se o parâmetro b não for especificado, a contagem de a é retornada
+### exemplo() 
+retorna lista de exemplos com algumas das funções. Está função limpará tudo o que foi inserido anteriormente
+
+### rand(n1,n2,e) 
+retorna uma matriz com dimensões n1 e n2 e com números aleatórios e valor esperado e
+
+### aprox(x,z) 
+aproxima um número, de um vetor ou uma matriz bidimensional de x a z casas decimais
+
+### matrizn(z) 
+retorna uma matriz javascript dos parâmetros da função z
+
+### pale(n) 
+retorna um vetor com comprimento n com uma caminhada aleatória pura
+
+### vet(a,b) 
+retorna um vetor com dados de a até b
+
+### qtd(a,b) 
+conta o número de elementos b na matriz a. Se o parâmetro b não for especificado, a contagem de a é retornada
+
+
 9. Função plot(z) retorna um gráfico de um vetor z.
 10. Função limpar() retorna um espaço de trabalho limpo
 11. Função salvar(x) onde x é um nome de um arquivo que termina com .html que salva uma cópia do trabalho atual localmente
