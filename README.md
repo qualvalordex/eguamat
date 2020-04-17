@@ -53,5 +53,4 @@ A função exemplo() retorna amostras do uso de todas as funções existentes e 
         linha(X,2) retornar a segunda linha da matriz X;
         plot(linha(X,2)), neste exemplo, realiza a plotagem de um gráfico com os valores da linha da matriz X.
 
-Um editor Web básico de excução de comando JavaScript, no qual é possível executar suas próprias funções. 
-![github](https://user-images.githubusercontent.com/48676920/65815971-73a66580-e1f6-11e9-8814-0c2babd9706b.JPG)
+
