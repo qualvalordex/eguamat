@@ -100,6 +100,7 @@ Retorna a transposta de linhas de um vetor, uma coluna de um vetor ou uma matriz
 
 
 Observe que uma entrada que termina com: oculta a visualização da saída
+
 Observe que uma entrada que começa com # é definida como texto 
 
 
