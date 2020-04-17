@@ -53,4 +53,4 @@ A função exemplo() retorna amostras do uso de todas as funções existentes e 
         linha(X,2) retornar a segunda linha da matriz X;
         plot(linha(X,2)), neste exemplo, realiza a plotagem de um gráfico com os valores da linha da matriz X.
 
-
+![](images/exemplo12.PNG)
