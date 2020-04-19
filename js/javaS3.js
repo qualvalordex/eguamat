@@ -32,6 +32,17 @@ function ajuda() {
     "32) Função coluna(a,c) retorna uma coluna específica c de uma matriz bidimensional a" + "<br>" +
     "33) Função linha(a,r) retorna uma coluna específica c de uma matriz bidimensional a" + "<br>" +
     "34) Função transposta(a) retorna a transposta de linhas de um vetor, uma coluna de um vetor ou uma matriz bidimensional" + "<br>" +
+    "35) Função sen(x) retorna o seno de um número em radiano" + "<br>" +
+    "36) Função cos(x) retorna o cosseno de um número em radiano" + "<br>" +
+    "37) Função tan(x) retorna a tangente de um número em radiano" + "<br>" +
+    "38) Função arcos(x) retorna o arco cosseno de um número em radiano" + "<br>" +
+    "39) Função arsen(x) retorna o arco tangente de um número em radiano" + "<br>" +
+    "40) Função artan(x) retorna o arco tangente de um número em radiano" + "<br>" +
+    "41) Função exp(x) retorna e^x, onde x é o argumento, e e é a Constante de Euler, a base dos logaritmos naturais" + "<br>" +
+    "42) Função log(x) retorna o logaritmo natural(base e) de um número" + "<br>" +
+    "43) Função pot(x,y) retorna a potenciação e radiciação" + "<br>" +
+    "44) Função aleat() retorna um valor aleatório" + "<br>" +
+    "45) Função raizq(x) retorna a raíz quadrada de um número" + "<br>" +
     "Observe que uma entrada que termina com: oculta a visualização da saída" + "<br>" +
     "Observe que uma entrada que começa com # é definida como texto";
   return x;
