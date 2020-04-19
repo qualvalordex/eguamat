@@ -307,3 +307,54 @@ function transposta(a) {
   }
   return matriz(data);
 }
+
+//Funçao Seno, Cosseno, e Tangente
+function sen(x) { 
+	return Math.sin(x);
+}
+
+function cos(x){
+	return Math.cos(x);
+}
+
+function tan(x){
+	return Math.tan(x);
+}
+
+//Funçao Arco Seno, Cosseno e Tangente
+function arcos(x){
+	return Math.acos(x);
+}
+
+function arsen(x){
+	return Math.asin(x);
+}
+
+function artan(x){
+	return Math.atan(x)
+}
+
+//Funçao  retorna ex, onde x é o argumento, e e é a Constante de Euler
+function exp(x){
+	return Math.exp(x);
+}
+
+//Funçao de log
+function log(x) {
+	return Math.log(x);
+}
+
+//Funçao de elvação que falta trocar o nome da função
+function pot(x,y){
+	return Math.pow(x,y);
+}
+
+//Funçao que gera um valor aleatório
+function aleat(){
+	return Math.random();
+}
+
+//Função de raiz quadrada
+function raizq(x){
+	return Math.sqrt(x);
+}
