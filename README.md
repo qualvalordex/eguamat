@@ -98,6 +98,38 @@ Retorna uma coluna específica c de uma matriz bidimensional a.
 ### transposta(a)
 Retorna a transposta de linhas de um vetor, uma coluna de um vetor ou uma matriz bidimensional. 
 
+### sen(x) 
+Retorna o seno de um número em radiano.
+
+### cos(x)
+Retorna o cosseno de um número em radiano.
+
+### tan(x) 
+Retorna a tangente de um número em radiano.
+
+### arcos(x)
+Retorna o arco cosseno de um número em radiano.
+
+### arsen(x)
+Retorna o arco tangente de um número em radiano.
+
+### artan(x)
+Retorna o arco tangente de um número em radiano.
+
+### exp(x)
+Retorna e^x, onde x é o argumento, e e é a Constante de Euler, a base dos logaritmos naturais.
+
+### log(x)
+Retorna o logaritmo natural(base e) de um número.
+
+### pot(x,y)
+Retorna a potenciação e radiciação.
+
+### aleat()
+Retorna um valor aleatório
+
+### raizq(x) 
+Retorna a raíz quadrada de um número.
 
 Observe que uma entrada que termina com: oculta a visualização da saída
 
