@@ -6,7 +6,7 @@ O MatEgua, módulo originado a partir da linguagem Egua, é um instrumento para 
 ## comandos
 
 ### ajuda()
-Este comando mostra todas as 31 funções disponiveis editor, são elas: 
+Este comando mostra todas as 45 funções disponiveis no editor, são elas: 
 
 ### exemplo() 
 Retorna lista de exemplos com algumas das funções. Está função limpará tudo o que foi inserido anteriormente.
@@ -98,10 +98,42 @@ Retorna uma coluna específica c de uma matriz bidimensional a.
 ### transposta(a)
 Retorna a transposta de linhas de um vetor, uma coluna de um vetor ou uma matriz bidimensional. 
 
+### sen(x) 
+Retorna o seno de um número em radiano.
 
-Observe que uma entrada que termina com: oculta a visualização da saída
+### cos(x)
+Retorna o cosseno de um número em radiano.
 
-Observe que uma entrada que começa com # é definida como texto 
+### tan(x) 
+Retorna a tangente de um número em radiano.
+
+### arcos(x)
+Retorna o arco cosseno de um número em radiano.
+
+### arsen(x)
+Retorna o arco tangente de um número em radiano.
+
+### artan(x)
+Retorna o arco tangente de um número em radiano.
+
+### exp(x)
+Retorna e^x, onde x é o argumento, e e é a Constante de Euler, a base dos logaritmos naturais.
+
+### log(x)
+Retorna o logaritmo natural(base e) de um número.
+
+### pot(x,y)
+Retorna a potenciação e radiciação.
+
+### aleat()
+Retorna um número pseudo-aleatório no intervalo [0, 1].
+
+### raizq(x) 
+Retorna a raíz quadrada de um número.
+
+Observe que uma entrada que termina com: oculta a visualização da saída.
+
+Observe que uma entrada que começa com # é definida como texto. 
 
 
 ### exemplo()
