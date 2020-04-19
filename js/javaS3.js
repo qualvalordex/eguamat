@@ -41,7 +41,7 @@ function ajuda() {
     "41) Função exp(x) retorna e^x, onde x é o argumento, e e é a Constante de Euler, a base dos logaritmos naturais" + "<br>" +
     "42) Função log(x) retorna o logaritmo natural(base e) de um número" + "<br>" +
     "43) Função pot(x,y) retorna a potenciação e radiciação" + "<br>" +
-    "44) Função aleat() retorna um valor aleatório" + "<br>" +
+    "44) Função aleat() retorna um número pseudo-aleatório no intervalo [0, 1]" + "<br>" +
     "45) Função raizq(x) retorna a raíz quadrada de um número" + "<br>" +
     "Observe que uma entrada que termina com: oculta a visualização da saída" + "<br>" +
     "Observe que uma entrada que começa com # é definida como texto";
