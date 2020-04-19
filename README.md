@@ -6,7 +6,7 @@ O MatEgua, módulo originado a partir da linguagem Egua, é um instrumento para 
 ## comandos
 
 ### ajuda()
-Este comando mostra todas as 31 funções disponiveis editor, são elas: 
+Este comando mostra todas as 45 funções disponiveis no editor, são elas: 
 
 ### exemplo() 
 Retorna lista de exemplos com algumas das funções. Está função limpará tudo o que foi inserido anteriormente.
