@@ -126,14 +126,14 @@ Retorna o logaritmo natural(base e) de um número.
 Retorna a potenciação e radiciação.
 
 ### aleat()
-Retorna um valor aleatório
+Retorna um número pseudo-aleatório no intervalo [0, 1].
 
 ### raizq(x) 
 Retorna a raíz quadrada de um número.
 
-Observe que uma entrada que termina com: oculta a visualização da saída
+Observe que uma entrada que termina com: oculta a visualização da saída.
 
-Observe que uma entrada que começa com # é definida como texto 
+Observe que uma entrada que começa com # é definida como texto. 
 
 
 ### exemplo()
