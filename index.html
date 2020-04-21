@@ -100,12 +100,13 @@
     <img src="images/eg1.png" style="width:150px;height: auto;">
   </div>
 
+
   <div class="btn-group">
     <ul>
       <li><button href="something" class="button4" onclick="limpar();" style="background-color:#9a4ef1" onclick="ajuda()">Limpar</button></li>
-      <li><button href="something" class="button4" onclick="salvar();" style="background-color:#f14ebd">Salvar</button></li>
-      <li><button href="something" class="button4" onclick="carregar();" style="background-color:#f1bb4e">Carregar</button></li>
-      <li><button href="something" class="button4" onclick="window.location.href = 'https://castanhal.ifpa.edu.br';" style="background-color:#f14e4e">Ajuda</button></li>
+      <li><button href="something" class="button4" onclick="mostrarS();" style="background-color:#f14ebd">Salvar</button></li>
+      <li><button href="something" class="button4" onclick="mostrarC();" style="background-color:#f1bb4e">Carregar</button></li>
+      <li><button href="something" class="button4" onclick="window.location.href = 'https://egua.tech/docs';" style="background-color:#f14e4e">Ajuda</button></li>
     </ul>
   </div>
 </div>
@@ -114,6 +115,16 @@
     <td id="calc"></td>
   </tr>
 </table>
-<script>   CreateInputDiv();   </script>
+<script>   
+  CreateInputDiv();   
+  
+  function mostrarS(){
+    alert('Digite salvar( ) para baixar o código');
+  }
+
+  function mostrarC(){
+    alert('Digite carregar( ) para carregar um código');
+  }
+</script>
 </body>
 </html>
