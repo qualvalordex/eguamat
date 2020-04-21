@@ -245,7 +245,7 @@ function limpar() {
 }
 
 // saves the current workspace to a local html file
-function salvar(x) {
+function salvar(x="codigo.eguamat") {
   var textToSave = document.getElementById("calc").innerHTML;
   var textToSaveAsBlob = new Blob([textToSave], { type: "text/plain" });
   var textToSaveAsURL = window.URL.createObjectURL(textToSaveAsBlob);
