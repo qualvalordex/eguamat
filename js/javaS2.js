@@ -344,7 +344,7 @@ function log(x) {
 	return Math.log(x);
 }
 
-//Funçao de elvação que falta trocar o nome da função
+//Funçao de elevação que falta trocar o nome da função
 function pot(x,y){
 	return Math.pow(x,y);
 }
@@ -357,4 +357,68 @@ function aleat(){
 //Função de raiz quadrada
 function raizq(x){
 	return Math.sqrt(x);
+}
+
+//Função cálculo da área do círculo
+function acirculo(r){
+    return ((Math.PI*r*r*100)/100);
+}
+
+//Função cálculo da área do quadrado
+function aquad(l){
+    return l*l;
+}
+
+//Função cálculo da área do retângulo
+function aretan(la,lb){
+    return la*lb;
+}
+
+//Função cálculo da área do losango
+function alosan(D,d){
+    return (D*d)/2;
+}
+
+//Função cálculo da área do trapézio
+function atrap(B, b, h){
+    return (B*b*h)/2;
+}
+
+//Função cálculo da área do triângulo
+function atrian(b, h){
+    return (b*h)/2;
+}
+
+//Função velocidade média
+function vmed(s,t){
+    return (s/t);
+}
+
+
+function dterm(d, c, t){
+    return d*c*t;
+}
+
+function calsen(m, c, t){
+    return m*c*t;
+}
+
+function callat(m, l){
+    return m*l;
+}
+
+function desloc(s0, s){
+    return s-s0;
+}
+
+function vmed(s0, s, t){
+    return (s-s0)/t;
+}
+
+function acel(v, v0, t, t0) {
+    return (v-v0)/(t-t0)+'m/s²';
+
+}
+function mruvpos(s0,v0, t, a){
+    return s0+v0*t+((a*t*t)/2)+'m';
 }
