@@ -207,6 +207,10 @@ function smtr(a) {
   return aprox(z,2);
 }
 
+function media(a){
+    return smtr(a)/a.length;
+}
+
 // calculates the expected value (arithmetic mean) of an array
 function ve(a) {
 if(a.length == 1){return aprox(smtr(a) / a[0].length,4);} // a is a row array
@@ -394,31 +398,76 @@ function vmed(s,t){
     return (s/t);
 }
 
-
+//Função Dilatação Térmica
 function dterm(d, c, t){
     return d*c*t;
 }
-
+//Função Calor Sensível
 function calsen(m, c, t){
     return m*c*t;
 }
-
+//Função Calor Latente
 function callat(m, l){
     return m*l;
 }
-
-function desloc(s0, s){
-    return s-s0;
+//Função Espaço Percorrido
+function deltas(s0, s){
+    return ds=s-s0;
 }
 
-function vmed(s0, s, t){
-    return (s-s0)/t;
+//Função Tempo Percorrido
+function deltat(t0, t){
+  return dt=t-t0;
 }
 
+//Função Velocidade Média
+function vmed(){
+    return ds/dt;
+}
+//Função Aceleração
 function acel(v, v0, t, t0) {
     return (v-v0)/(t-t0)+'m/s²';
 
 }
-function mruvpos(s0,v0, t, a){
-    return s0+v0*t+((a*t*t)/2)+'m';
+
+//Função Horária da Posição MRUV (output: Espaços)
+function mruvfh(s0,v0, t, a){
+  var posicoes = new Array(t);
+    for(var i=0;i<t;i++){
+    posicoes[i]=s0+v0*i+((a*i*i)/2);
+    console.log(posicoes[i]);
+    }
+  return posicoes;
+}
+//Função Horária da Posição MRUV (output: Plotagem Gráfica)
+function mruvposd(s0,v0, t, a){
+  var posicoes = new Array(t);
+  for(var i=0;i<t;i++){
+    posicoes[i]=s0+v0*i+((a*i*i)/2);
+    console.log(posicoes[i]);
+  }
+  return plot(posicoes);
+
+}
+//Função Horária MRU
+function mrufh(s0,v,t){
+  var posicoesmru = new Array(t);
+  for(var i=0;i<t;i++){
+    posicoesmru[i]=s0+v*t;
+    console.log(posicoesmru[i]);
+  }
+  return posicoesmru;
+}
+//Função Horária da Posição MRUV (output: Plotagem Gráfica)
+function mruposd(s0,v0, t, a){
+  var posicoes = new Array(t);
+  for(var i=0;i<t;i++){
+    posicoes[i]=s0+v*t;
+    console.log(posicoes[i]);
+  }
+  return plot(posicoes);
+}
+
+function heic(){
+  return plot(posicoesmruv, posicoesmru);
 }
