@@ -347,9 +347,12 @@ function expo(x){
   x = parseFloat(x);
   var pos = new Array();
   var y = new Array();
-  for (i = 0; i < x; i++) {
-    pos[i] = Math.exp(i);
-    y[i] = i;
+  var n=0.01;
+  var index = 0;
+  for (i = 0; i < x; i+=n) {
+    pos[index] = Math.exp(i);
+    y[index] = i;
+    index++;
     console.log(pos[i]);
   }
   return plot(y,pos);
