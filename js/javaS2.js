@@ -343,6 +343,18 @@ function exp(x){
 	return Math.exp(x);
 }
 
+function expo(x){
+  x = parseFloat(x);
+  var pos = new Array();
+  var y = new Array();
+  for (i = 0; i < x; i++) {
+    pos[i] = Math.exp(i);
+    y[i] = i;
+    console.log(pos[i]);
+  }
+  return plot(y,pos);
+}
+
 //Funçao de log
 function log(x) {
 	return Math.log(x);
@@ -471,3 +483,4 @@ function mruposd(s0,v0, t, a){
 function heic(){
   return plot(posicoesmruv, posicoesmru);
 }
+

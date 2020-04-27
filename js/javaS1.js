@@ -204,13 +204,11 @@ function qtd(a, b) {
 }
 
 // plots a given data array z 
-function plot(z) {
+function plot(x,y) {
   document.getElementById(outId).innerHTML = "";
-  var yy = z;
-  var xx = [];
-  for (var i = 0; i <= yy.length; i++) {
-    xx[i] = JSON.stringify(i);
-  }
+  var yy = y;
+  var xx = x;
+
   var data = [{
     x: xx,
     y: yy,
