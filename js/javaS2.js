@@ -76,7 +76,7 @@ function matrizmult(a, b) {
 // calculates the inverse of matrix m with gaussian elimination 
 function matrizinv(m) {
   // if the matrix isn't square: exit (error)
-  if (m.length !== m[0].length) { return "not a square matrix"; }
+  if (m.length !== m[0].length) { return "não é uma matriz quadrada"; }
 
   //create the identity matrix (I), and a copy (C) of the original
   var i = 0, ii = 0, j = 0, dim = m.length, e = 0, t = 0;
