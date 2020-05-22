@@ -117,7 +117,23 @@ function parse(e1, e2) {
       }
     }
     catch (err) {
-      console.log("err = " + err);
+      if (err instanceof ReferenceError) {
+        err.name = "Erro de Referência"
+        err.message = "Nome Inválido"
+        console.log("err = " + err);
+      } else if (err instanceof SyntaxError) {
+        err.name = "Erro de Sintaxe"
+        err.message = ""
+        console.log("err = " + err.message);
+      } else if (err instanceof RangeError){
+        err.name = "Valor Inválido"
+        err.message = ""
+        console.log("err = " + err.message);
+      }else if (err instanceof TypeError){
+        err.name = "Valor Inválido"
+        err.message = ""
+        console.log("err = " + err.message);
+      }
       console.log("error = " + outId);
       document.getElementById(outId).innerHTML = err;
     }
