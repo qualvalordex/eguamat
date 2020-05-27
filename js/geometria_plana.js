@@ -27,3 +27,20 @@ function atrap(B, b, h){
 function atrian(b, h){
     return (b*h)/2;
 }
+
+
+//Função distância entre 2 pontos
+function d2p(x1,x2,y1,y2){
+    var x = (pot(x2, 2)) - 2 * x2 * x1 + (pot(x1, 2));
+    console.log(x)
+    var y = (pot(y2, 2)) - 2 * y2 * y1 + (pot(y1, 2));
+    console.log(y)
+    return raizq((x+y));
+}
+
+//Função ponto médio
+function pm(x1,x2,y1,y2){
+    var xm = (x2+x1)/2;
+    var ym = (y2+y1)/2;
+    return ['x médio='+xm,'y médio='+ym];
+}
