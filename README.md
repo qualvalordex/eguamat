@@ -149,37 +149,37 @@ Retorna uma matriz de identidade com n números de linhas e colunas.
 # Trigonometria
 
 ## sen(x) 
-Retorna o seno de um número em radiano.
+Retorna o seno de um número X em radiano.
 
 ## cos(x)
-Retorna o cosseno de um número em radiano.
+Retorna o cosseno de um número X em radiano.
 
 ## tan(x) 
-Retorna a tangente de um número em radiano.
+Retorna a tangente de um número X em radiano.
 
 ## arcos(x)
-Retorna o arco cosseno de um número em radiano.
+Retorna o arco cosseno de um número X em radiano.
 
 ## arsen(x)
-Retorna o arco tangente de um número em radiano.
+Retorna o arco tangente de um número X em radiano.
 
 ## artan(x)
-Retorna o arco tangente de um número em radiano.
+Retorna o arco tangente de um número X em radiano.
 
 ## exp(x)
-Retorna e^x, onde x é o argumento, e e é a Constante de Euler, a base dos logaritmos naturais.
+Retorna e^x, onde x é o argumento, e é a Constante de Euler, a base dos logaritmos naturais.
 
 ## log(x)
-Retorna o logaritmo natural(base e) de um número.
+Retorna o logaritmo natural (base e) de um número X.
 
 ## pot(x,y)
-Retorna a potenciação e radiciação.
+Retorna a potenciação de um número base X por uma expoente Y, também podendo ser aplicada para realização de uma radiciação.
 
 ## aleat()
 Retorna um número pseudo-aleatório no intervalo [0, 1].
 
 ## raizq(x) 
-Retorna a raíz quadrada de um número.
+Retorna a raíz quadrada de um número X.
 
 Observe que uma entrada que termina com: oculta a visualização da saída.
 
@@ -239,12 +239,18 @@ Função Gráfica para Posição em Movimento Retilíneo Uniformemente Variado.
 ## mruvvel(Posição Inicial, Posição Final, Aceleração)
 Função Gráfica para velocidade em Movimento Retilíneo Uniformemente Variado.
 
-
+![image](https://user-images.githubusercontent.com/39010251/87225309-50523e80-c362-11ea-8140-41ae2274ed56.png)
 
 # Controle e Servomecanismos
 
 ## pid(Overshoot, Tempo de Assentamento, Ganho Estático, Constante de tempo 1, Constante de Tempo 2)
-Função para o cálculo dos valores de um controlador PID
+Função para o cálculo dos valores de um controlador PID. 
+Para o projeto de um controlador PID deve-se estabelecer alguns valores de entrada na seguinte ordem:
+1º - Overshoot: Também conhecido como "sobresinal", é quando um sinal excede o seu valor alvo, esse parâmetro de entrada serve para delimitar (em porcentagem) o limite de quanto o sinal pode ultrapassar seu alvo.
+2º - Tempo de Assentamento: Refere-se ao tempo necessário para o sinal partir de um instante inicial, em uma entrada do tipo degrau, até atingir uma faixa tolerável onde considera-se que o sistema está estável. O valor inserido na função representa o tempo desejado para que o sinal se estabilize.
+3º - Ganho Estático: Representa o ganho do sinal de saída em relação ao sinal de entrada, o valor inserido na função representa o ganho aplicado ao sistema.
+4º - Constante de Tempo 1: Refere-se ao valor da constante de tempo do primeiro polo.
+5º - Constante de Tempo 2: Refere-se ao valor da constante de tempo do segundo polo.
 
 
 
