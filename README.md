@@ -188,42 +188,50 @@ Observe que uma entrada que começa com # é definida como texto.
 # Cinemática
 ## vmed(distância,tempo)
 Retorna o valor da velocidade média a partir dos valores de entrada da distância e tempo, respectivamente.
+
 ![image](https://user-images.githubusercontent.com/39010251/87218878-38ac9300-c32d-11ea-8abe-76c11b9a32aa.png)   
 
 ## deltas(espaço inicial, espaço final)
 Retorna o espaço percorrido baseado na diferença do Espaço Final pelo Espaço Inicial.
 O cálculo é feito como ilustrado abaixo.
+
 ![image](https://user-images.githubusercontent.com/39010251/87218904-6bef2200-c32d-11ea-92fa-d456d250f2b5.png)
 
 ## deltat(tempo inicial, tempo final)
 Retorna o tempo percorrido baseado na diferença do Tempo Final pelo Tempo Inicial.
 O cálculo é feito como ilustrado abaixo.
+
 ![image](https://user-images.githubusercontent.com/39010251/87218922-87f2c380-c32d-11ea-8819-ee151ac7b110.png)
 
 ## acel(Velocidade Final, Velocidade Inical, Tempo Final, Tempo Inicial)
 Retorna o valor da aceleração utilizando como dados de entrada os valores da Velocidade Final, Velocidade Inicial, Tempo Final e Tempo Inicial, respectivamente.
 A aceleração é obtida a partir da divisão da diferença das velocidades final e inicial, sobre a difença dos tempos final e inicial, como ilustrado abaixo.
+
 ![image](https://user-images.githubusercontent.com/39010251/87219010-267f2480-c32e-11ea-8a6a-a3c27838adf1.png)
 
 ## mrufh(Posição Inicial, Velocidade Final, Tempo)
 Função Horária do Movimento Retilíneo Uniforme, retorna o valor da posição de um objeto em movimento retilíneo uniforme em um dado instante de tempo.
 A posição em dado instante é obtida a partir dos dados de entrada Posição Inicial, Velocidade e Tempo Percorrido, respectivamente.
 No EguaMat, esta função gera uma lista com os valores de cada posição em seu respectivo instante no tempo até chegar no instante final que é o valor de tempo inserido na entrada.
+
 ![image](https://user-images.githubusercontent.com/39010251/87218982-fa63a380-c32d-11ea-802f-af46328d4a24.png)
 
 ## mrufhp(Posição Inicial, Velocidade Final, Tempo)
 Função Gráfica para a Função Horária da Posição em Movimento Retilíneo Uniforme.
+
 ![image](https://user-images.githubusercontent.com/39010251/87219136-2fbcc100-c32f-11ea-9c51-0b87db0246fe.png)
 
 ## mruvel(Posição Inicial, Posição Final, Tempo)
 Função Gráfica para velocidade em Movimento Retilíneo Uniforme.
+
 ![image](https://user-images.githubusercontent.com/39010251/87219171-67c40400-c32f-11ea-8e4c-5439b99be391.png)
 
 ## mruvfh(Posição Inicial, Velocidade Inicial, Tempo, Aceleração)
 Função Horária da Posição em Movimento Retilíneo Uniformemente Variado
 
 ## mruvfhp(Posição Inicial, Velocidade Inicial, Tempo, Aceleração)
-Função Gráfica para Velocidade em Movimento Retilíneo Uniformemente Variado
+Função Gráfica para Velocidade em Movimento Retilíneo Uniformemente Variado.
+
 ![image](https://user-images.githubusercontent.com/39010251/87219309-67783880-c330-11ea-9f9c-09317a43d1df.png)
 
 ## mruvvel(Posição Inicial, Posição Final, Aceleração)
