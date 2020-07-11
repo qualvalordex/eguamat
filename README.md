@@ -85,10 +85,10 @@ Carrega um arquivo .html de uma sessão anteriormente salva.
 # Estatística
 
 ## max(a)
-Retorna o valor máximo de uma matriz.
+Retorna o valor máximo de uma matriz a.
 
 ## min(a)
-Retorna o valor mínimo de uma matriz.
+Retorna o valor mínimo de uma matriz a.
 
 ## intervalo(a)
 Calcula o intervalo (max - min) de uma matriz a.
@@ -100,19 +100,19 @@ Calcula a mediana de uma matriz a.
 Calcula a soma de determinada matriz a.
 
 ## media(a)
-
+Calcula o valor média de uma matriz a.
 
 ## ve(a)
 Calcula o valor esperado (média aritmética) de uma matriz a. 
 
 ## sqr(array)
-Calcula a soma dos quadrados dos resíduos (sqr) of an array.
+Calcula a soma dos quadrados dos resíduos (sqr) de uma matriz a.
 
 ## variancia(array, flag)
-Calcula a variação de uma matriz. Se flag = 0 então população. Se flag = 1 faça uma amostra.
+Calcula a variação de uma matriz. Se flag = 0 então é uma população. Se flag = 1 então é uma amostra.
 
 ## devpad(array, flag)
-Calcula o desvio padrão de uma matriz. Se flag = 0 então população. Se flag = 1 faça a amostra.
+Calcula o desvio padrão de uma matriz. Se flag = 0 então é uma população. Se flag = 1 então é uma amostra.
 
 ## covar(array1, array2)
 Calcula a covariância de duas matrizes.
@@ -187,19 +187,38 @@ Observe que uma entrada que começa com # é definida como texto.
 
 # Cinemática
 ## vmed(distância,tempo)
-Retorna o valor da velocidade média
+Retorna o valor da velocidade média a partir dos valores de entrada da distância e tempo, respectivamente.
+          Distância 
+vmed  =   ---------- 
+            Tempo   
 
 ## deltas(espaço inicial, espaço final)
-Retorna o espaço percorrido
+Retorna o espaço percorrido baseado na diferença do Espaço Final pelo Espaço Inicial.
+O cálculo é feito como ilustrado abaixo.
+            Espaço Inicial 
+deltas  =  ---------------- 
+             Espaço Final
 
 ## deltat(tempo inicial, tempo final)
-Retorna o tempo percorrido
+Retorna o tempo percorrido baseado na diferença do Tempo Final pelo Tempo Inicial.
+O cálculo é feito como ilustrado abaixo.
+            Tempo Inicial 
+deltat  =  ---------------- 
+             Tempo Final
 
 ## acel(Velocidade Final, Velocidade Inical, Tempo Final, Tempo Inicial)
-Retorna o valor da aceleração
+Retorna o valor da aceleração utilizando como dados de entrada os valores da Velocidade Final, Velocidade Inicial, Tempo Final e Tempo Inicial, respectivamente.
+A aceleração é obtida a partir da divisão da diferença das velocidades final e inicial, sobre a difença dos tempos final e inicial, como ilustrado abaixo.
+            (v-v0) 
+acel  =  -----------
+            (t-t0)
 
 ## mrufh(Posição Inicial, Velocidade Final, Tempo)
-Função Horária do Movimento Retilíneo Uniforme
+Função Horária do Movimento Retilíneo Uniforme, retorna o valor da posição de um objeto em movimento retilíneo uniforme em um dado instante de tempo.
+A posição em dado instante é obtida a partir dos dados de entrada Posição Inicial, Velocidade e Tempo Percorrido, respectivamente.
+No EguaMat, esta função gera uma lista com os valores de cada posição em seu respectivo instante no tempo até chegar no instante final que é o valor de tempo inserido na entrada.
+
+acel  =  S0 + V\timesT
 
 ## mrufhp(Posição Inicial, Velocidade Final, Tempo)
 Função Horária da Posição do Movimento Retilíneo Uniformemente Variado.
