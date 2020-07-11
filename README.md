@@ -219,12 +219,12 @@ No EguaMat, esta função gera uma lista com os valores de cada posição em seu
 ## mrufhp(Posição Inicial, Velocidade Final, Tempo)
 Função Gráfica para a Função Horária da Posição em Movimento Retilíneo Uniforme.
 
-![image](https://user-images.githubusercontent.com/39010251/87219136-2fbcc100-c32f-11ea-9c51-0b87db0246fe.png)
+![image](https://user-images.githubusercontent.com/39010251/87225825-0f5c2900-c366-11ea-8809-fd0682769902.png)
 
 ## mruvel(Posição Inicial, Posição Final, Tempo)
 Função Gráfica para velocidade em Movimento Retilíneo Uniforme.
 
-![image](https://user-images.githubusercontent.com/39010251/87219171-67c40400-c32f-11ea-8e4c-5439b99be391.png)
+![image](https://user-images.githubusercontent.com/39010251/87225876-88f41700-c366-11ea-8bd5-7ac2722e2252.png)
 
 ## mruvfh(Posição Inicial, Velocidade Inicial, Tempo, Aceleração)
 Função Horária da Posição em Movimento Retilíneo Uniformemente Variado
@@ -244,17 +244,13 @@ Função Gráfica para velocidade em Movimento Retilíneo Uniformemente Variado.
 # Controle e Servomecanismos
 
 ## pid(Overshoot, Tempo de Assentamento, Ganho Estático, Constante de tempo 1, Constante de Tempo 2)
-Função para o cálculo dos valores de um controlador PID. 
-Para o projeto de um controlador PID deve-se estabelecer alguns valores de entrada na seguinte ordem:
-
-1º - Overshoot: Também conhecido como "sobresinal", é quando um sinal excede o seu valor alvo, esse parâmetro de entrada serve para delimitar (em porcentagem) o limite de quanto o sinal pode ultrapassar seu alvo.
-
-2º - Tempo de Assentamento: Refere-se ao tempo necessário para o sinal partir de um instante inicial, em uma entrada do tipo degrau, até atingir uma faixa tolerável onde considera-se que o sistema está estável. O valor inserido na função representa o tempo desejado para que o sinal se estabilize.
-
-3º - Ganho Estático: Representa o ganho do sinal de saída em relação ao sinal de entrada, o valor inserido na função representa o ganho aplicado ao sistema.
-
+Função para o cálculo dos valores de um controlador PID.<br/>
+Para o projeto de um controlador PID deve-se estabelecer alguns valores de entrada na seguinte ordem:<br/>
+1º - Overshoot: Também conhecido como "sobresinal", é quando um sinal excede o seu valor alvo, esse parâmetro de entrada serve para delimitar (em porcentagem) o limite de quanto o sinal pode ultrapassar seu alvo.<br/>
+2º - Tempo de Assentamento: Refere-se ao tempo necessário para o sinal partir de um instante inicial, em uma entrada do tipo degrau, até atingir uma faixa tolerável onde considera-se que o sistema está estável. O valor inserido na função representa o tempo desejado para que o sinal se estabilize.<br/>
+3º - Ganho Estático: Representa o ganho do sinal de saída em relação ao sinal de entrada, o valor inserido na função representa o ganho aplicado ao sistema.<br/>
 4º - Constante de Tempo 1: Refere-se ao valor da constante de tempo do primeiro polo.<br/>
-5º - Constante de Tempo 2: Refere-se ao valor da constante de tempo do segundo polo.
+5º - Constante de Tempo 2: Refere-se ao valor da constante de tempo do segundo polo.<br/>
 
 
 
