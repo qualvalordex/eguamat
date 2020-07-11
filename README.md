@@ -229,13 +229,17 @@ Função Gráfica para velocidade em Movimento Retilíneo Uniforme.
 ## mruvfh(Posição Inicial, Velocidade Inicial, Tempo, Aceleração)
 Função Horária da Posição em Movimento Retilíneo Uniformemente Variado
 
-## mruvfhp(Posição Inicial, Velocidade Inicial, Tempo, Aceleração)
-Função Gráfica para Velocidade em Movimento Retilíneo Uniformemente Variado.
 
-![image](https://user-images.githubusercontent.com/39010251/87219309-67783880-c330-11ea-9f9c-09317a43d1df.png)
+## mruvfhp(Posição Inicial, Velocidade Inicial, Tempo, Aceleração)
+Função Gráfica para Posição em Movimento Retilíneo Uniformemente Variado.
+
+![image](https://user-images.githubusercontent.com/39010251/87225129-3532ff00-c361-11ea-9cdf-a181cd2cc3db.png)
+
 
 ## mruvvel(Posição Inicial, Posição Final, Aceleração)
-Função Gráfico para velocidade em MRUV
+Função Gráfica para velocidade em Movimento Retilíneo Uniformemente Variado.
+
+
 
 # Controle e Servomecanismos
 
