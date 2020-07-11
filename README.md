@@ -82,18 +82,6 @@ onde x é um nome de um arquivo que termina com .html que salva uma cópia do tr
 ## carregar()
 Carrega um arquivo .html de uma sessão anteriormente salva.
 
-## matriz(z)
-Cria e exibe uma tabela a partir de um vetor ou de uma matriz bidimensional z.
-
-## matrizmult(a,b)
-Multiplica duas matrizes a e b.
-
-## matrizinv(m)
-Calcula o inverso da matriz m a partir da eliminação gaussiana.
-
-## matrizid(n)
-Retorna uma matriz de identidade com n números de linhas e colunas. 
-
 # Estatística
 
 ## max(a)
@@ -145,6 +133,20 @@ Retorna uma coluna específica c de uma matriz bidimensional a.
 
 ## transposta(a)
 Retorna a transposta de linhas de um vetor, uma coluna de um vetor ou uma matriz bidimensional. 
+
+## matriz(z)
+Cria e exibe uma tabela a partir de um vetor ou de uma matriz bidimensional z.
+
+## matrizmult(a,b)
+Multiplica duas matrizes a e b.
+
+## matrizinv(m)
+Calcula o inverso da matriz m a partir da eliminação gaussiana.
+
+## matrizid(n)
+Retorna uma matriz de identidade com n números de linhas e colunas. 
+
+# Trigonometria
 
 ## sen(x) 
 Retorna o seno de um número em radiano.
