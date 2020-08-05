@@ -21,22 +21,23 @@ function linspace(startValue, stopValue, cardinality) {
 }
 
 function fun2(a,b,c){
-    //x = matriz(linspace(-100,100,100))
+    n = 2.5;
     var arr = [];
-    var step = (100 - (-100)) / (100- 1);
-    for (var i = 0; i < 100; i++) {
-        arr.push((-100) + (step * i));
+    var step = (n - (-n)) / (n- 1);
+    for (var i = 0; i < n; i=i+0.01) {
+        arr.push(((-n-1.945) + (step * i)));
     }
     x = arr;
-    //x = [b-4,b-3,b-2,b-1,b,b+1,b+2,b+3,b+4];
     f = x.map(function(x) { return ((x * x * a)+(b * x)+c); });
-    return ['f(x) ='+f];
+    plot(x,f);//['f(x) ='+f];
 }
 
 function fun2R(a,b,c){
-    var result = (-1 * b + Math.sqrt(Math.pow(b, 2) - (4 * a * c))) / (2 * a);
-    var result2 = (-1 * b - Math.sqrt(Math.pow(b, 2) - (4 * a * c))) / (2 * a);
-    return ["Raíz 1: " + result + "<br>" + "Raíz 2: " + result2];
+    r1 = (-1 * b + Math.sqrt(Math.pow(b, 2) - (4 * a * c))) / (2 * a);
+    r2 = (-1 * b - Math.sqrt(Math.pow(b, 2) - (4 * a * c))) / (2 * a);
+    xv = (-1*b)/(2*a);
+    yv = (-1*(Math.pow(b, 2) - (4 * a * c)))/4*a;
+    return ["Raíz 1: " + r1 + "<br>" + "Raíz 2: " + r2];
 }
 
 
