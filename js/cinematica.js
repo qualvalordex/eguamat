@@ -31,7 +31,7 @@ function mrufh(s0,v,t){
         index++;
         console.log(s[i]);
     }
-    return s;
+    return ["Função: "+s0+"+"+v+"*t"+"<br>"+"Posições: "+s];
 }
 //Função Horária da Posição MRUV (output: Plotagem Gráfica)
 function mrufhp(s0,v, t){
