@@ -233,8 +233,8 @@ function plot(x,y) {
   }];
   var layout =
       {
-        width: 1000,
-        height: 400,
+        width: window.screen.Width,
+        height: 550,
         paper_bgcolor: 'white',
         plot_bgcolor: 'white',
         margin: { l: 70, b: 60, r: 10, t: 40 },
