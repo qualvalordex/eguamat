@@ -12,12 +12,12 @@ function fun1R(a,b){
 }
 
 function linspace(startValue, stopValue, cardinality) {
-    var arr = [];
+    var lista = [];
     var step = (stopValue - startValue) / (cardinality - 1);
     for (var i = 0; i < cardinality; i++) {
         arr.push(startValue + (step * i));
     }
-    return arr;
+    return lista;
 }
 
 function fun2(a,b,c){
