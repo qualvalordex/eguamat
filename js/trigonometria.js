@@ -8,7 +8,7 @@ function sen(x) {
 function cos(x){
     return Math.cos(x);
 }
-function cosg(a,b){
+function cosplot(a,b){
     var s = new Array();
     var x = new Array();
     var index = 0;
