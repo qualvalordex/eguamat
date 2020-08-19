@@ -2,9 +2,25 @@
 function sen(x) {
     return Math.sin(x);
 }
+
+
 //Coseno
 function cos(x){
     return Math.cos(x);
+}
+function cosg(a,b){
+    var s = new Array();
+    var x = new Array();
+    var index = 0;
+    for(var i=0;i<13;i++){
+        s[index]=a*cos(x)+b;
+        x[index] = i;
+        index++;
+        console.log(s[i]);
+    }
+    s = s;
+    x = x;
+    plot(x,s);
 }
 
 //Tangente

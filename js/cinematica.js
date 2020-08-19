@@ -24,6 +24,7 @@ function acel(v, v0, t, t0) {
 
 //Função Horária MRU
 function mrufh(s0,v,t){
+    t=t+1;
     var s = new Array();
     var index = 0;
     for(var i=0;i<t;i++){
@@ -31,8 +32,9 @@ function mrufh(s0,v,t){
         index++;
         console.log(s[i]);
     }
-    return ["Função: "+s0+"+"+v+"*t"+"<br>"+"Posições: "+s];
+    return ["Função: "+s0+"+("+v+")*t"+"<br>"+"Posições: "+s];
 }
+
 //Função Horária da Posição MRUV (output: Plotagem Gráfica)
 function mrufhp(s0,v, t){
     var s = new Array();

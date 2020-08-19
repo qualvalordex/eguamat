@@ -18,7 +18,7 @@ function pid(Mo,t,K,T1,T2){
     //Controlador Integral (I)
     Ki = (10*csi*(pot(Wn,3))*T1*T2)/(K);
 
-    //Controlador Progressivo (D)
+    //Controlador Derivativo (D)
     Kd = (12*csi*Wn*T1*T2-T1-T2)/(K);
 
     return ['csi:'+csi,'<br/>','Wn:'+Wn,'<br/>','Proporcional:'+Kp,'<br/>','Integral:'+Ki,'<br/>','Progressivo:'+Kd];
