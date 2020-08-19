@@ -12,7 +12,7 @@ function cosplot(a,b){
     var s = new Array();
     var x = new Array();
     var index = 0;
-    for(var i=0;i<13;i++){
+    for(var i=0;i<14;i++){
         s[index]=a*cos(x)+b;
         x[index] = i;
         index++;
