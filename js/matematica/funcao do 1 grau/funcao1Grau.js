@@ -20,7 +20,7 @@ function linspace(startValue, stopValue, cardinality) {
     return lista;
 }
 
-function fun2(a,b,c){
+function fun2(a,b,c){ //Passar funções para arquivos corretos
     n = 2.5;
     var arr = [];
     var step = (n - (-n)) / (n- 1);
