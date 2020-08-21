@@ -1,16 +1,18 @@
 <!DOCTYPE html>
 <html xmlns:https="http://www.w3.org/1999/xhtml">
+
 <head>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter">
   <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-147268561-1"></script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-147268561-3"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
+    function gtag() { dataLayer.push(arguments); }
     gtag('js', new Date());
 
-    gtag('config', 'UA-147268561-1');
+    gtag('config', 'UA-147268561-3');
   </script>
+
 
   <title>Console eguamat</title>
   <link rel="icon" href="images/eguamat.png" type="image/x-icon">
@@ -33,15 +35,16 @@
 
   <style>
     body {
-      background-color: #F2F2F2;/*#4000C1;*/
+      background-color: #F2F2F2;
+      /*#4000C1;*/
     }
 
-      .input {
+    .input {
       background-color: #282A36;
       width: 100%;
       height: 35px;
       font-size: 18px;
-      padding-top: 10px; 
+      padding-top: 10px;
       font-family: Inter;
       text-indent: 10px;
       color: white;
@@ -50,6 +53,7 @@
       border-radius: 5px;
 
     }
+
     .output {
 
       background-color: #282A36;
@@ -58,7 +62,7 @@
       height: auto;
       display: block;
       font-size: 18px;
-      padding-top: 5px; 
+      padding-top: 5px;
       padding-bottom: 5px;
       font-family: Inter;
       text-indent: 10px;
@@ -85,15 +89,21 @@
       margin-left: 220px;
       margin-right: 20px;
       border-radius: 10px;
-      
+
     }
+
     .matrix {
       text-align: center;
       border-collapse: collapse;
       border: 1px white;
     }
-    .matrix tr,td { border: 1px #D29858; }
-    .sidebar{
+
+    .matrix tr,
+    td {
+      border: 1px #D29858;
+    }
+
+    .sidebar {
       width: 200px;
       height: 100%;
       top: 0;
@@ -104,12 +114,12 @@
     }
 
     .btn-group button {
-      background-color: #F2F2F2; 
-      color: gray; 
+      background-color: #F2F2F2;
+      color: gray;
       outline: none;
       border: none;
-      padding: 10px 24px; 
-      cursor: pointer; 
+      padding: 10px 24px;
+      cursor: pointer;
       display: inline-block;
       font-family: Inter;
       font-size: 17px;
@@ -121,7 +131,7 @@
       border-radius: 8px;
       width: 100%;
       transition: 0.3s;
-      
+
     }
 
     /* Add a background color on hover */
@@ -129,6 +139,7 @@
       background-color: #FF4B55;
       color: white;
     }
+
     .btn-group button:hover {
       background-color: #FF4B55;
       color: white;
@@ -142,37 +153,41 @@
     }
   </style>
 </head>
+
 <body>
-<div class="sidebar">
-  <div class="img">
-    <img src="images/eg1.png" style="width:150px;height: auto;">
+  <div class="sidebar">
+    <div class="img">
+      <img src="images/eg1.png" style="width:150px;height: auto;">
+    </div>
+
+
+    <div class="btn-group">
+      <ul>
+        <li><button href="something" class="button" onclick="limpar();"
+            onclick="ajuda()"><strong>Limpar</strong></button></li>
+        <li><button href="something" class="button" onclick="mostrarS();"><strong>Salvar</strong></button></li>
+        <li><button href="something" class="button" onclick="mostrarC();"><strong>Carregar</strong></button></li>
+        <li><button href="something" class="button"
+            onclick="window.open('https://egua.tech/docs/eguamat/');"><strong>Ajuda</strong></button></li>
+      </ul>
+    </div>
   </div>
+  <table id="calc">
+    <tr>
+      <td></td>
+    </tr>
+  </table>
+  <script>
+    CreateInputDiv();
 
+    function mostrarS() {
+      alert('Digite salvar( ) para baixar o código');
+    }
 
-  <div class="btn-group">
-    <ul>
-      <li><button href="something" class="button" onclick="limpar();" onclick="ajuda()"><strong>Limpar</strong></button></li>
-      <li><button href="something" class="button" onclick="mostrarS();"><strong>Salvar</strong></button></li>
-      <li><button href="something" class="button" onclick="mostrarC();"><strong>Carregar</strong></button></li>
-      <li><button href="something" class="button" onclick="window.open('https://egua.tech/docs/eguamat/');" ><strong>Ajuda</strong></button></li>
-    </ul>
-  </div>
-</div>
-<table id="calc">
-  <tr>
-    <td></td>
-  </tr>
-</table>
-<script>
-  CreateInputDiv();
-
-  function mostrarS(){
-    alert('Digite salvar( ) para baixar o código');
-  }
-
-  function mostrarC(){
-    alert('Digite carregar( ) para carregar um código');
-  }
-</script>
+    function mostrarC() {
+      alert('Digite carregar( ) para carregar um código');
+    }
+  </script>
 </body>
+
 </html>
