@@ -64,15 +64,15 @@ function exemplo() {
      document.getElementById("output" + cc).innerHTML = result;   
   }
   createExample("Exemplo-1. Um número aleatório entre -1 e +1", "rand()");
-  createExample("Exemplo-2. Um vetor horizontal de 5 elementos com números aleátorios ", "matriz(rand(1,5))");
-  createExample("Exemplo-3. Um vetor vertical de 5 elementos com números aleátorios", "matriz(rand(5,1))");
-  createExample("Exemplo-4. Um vetor bidimensional de 3 linhas e 4 colunas com números aleátorios", "matriz(rand(3,4))");
-  createExample("Exemplo-5. Um vetor bidimensional de 3 linhas e 4 colunas com números aleátorios com o valor esperado 0.5", "matriz(rand(3,4,0.5))");
+  createExample("Exemplo-2. Um vetor horizontal de 5 elementos com números aleatórios ", "matriz(rand(1,5))");
+  createExample("Exemplo-3. Um vetor vertical de 5 elementos com números aleatórios", "matriz(rand(5,1))");
+  createExample("Exemplo-4. Um vetor bidimensional de 3 linhas e 4 colunas com números aleatórios", "matriz(rand(3,4))");
+  createExample("Exemplo-5. Um vetor bidimensional de 3 linhas e 4 colunas com números aleatórios com o valor esperado 0.5", "matriz(rand(3,4,0.5))");
   createExample("Exemplo-6. Obter uma linha específica de uma matriz bidimensional", "matriz(linha(rand(4,4),2))");
   createExample("Exemplo-7. Obter uma coluna específica de uma matriz bidimensional", "matriz(coluna(rand(4,4),2))");
   createExample("Exemplo-8. Obter a matriz transposta", "transposta(rand(3,4))");
-  createExample("Exemplo-9. Obter o vetor horizontal transposto com números aleátorios", "transposta(rand(1,3))");
-  createExample("Exemplo-10. Obter o vetor vertical transposto com números aleátorios", "transposta(rand(3,1))");
+  createExample("Exemplo-9. Obter o vetor horizontal transposto com números aleatórios", "transposta(rand(1,3))");
+  createExample("Exemplo-10. Obter o vetor vertical transposto com números aleatórios", "transposta(rand(3,1))");
   createExample("Exemplo-11. Plotar uma coluna a partir de uma matriz aleatória", "plot(transposta(coluna(rand(10,5),1)))");
   createExample("Exemplo-12. Plotar uma linha a partir de uma matriz aleatória", "plot(linha(rand(10,5),2))");
   createExample("Exemplo-13. Plotar uma passeio aleatória pura", "plot(pale(50))");
