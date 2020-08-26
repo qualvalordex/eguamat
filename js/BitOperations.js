@@ -8,5 +8,14 @@ function neg(){
     return neg;
 }
 
+function const0(){
+    const0 = matriz([[1,1],[0,0]]);
+    return const0;
+}
+
+function const1(){
+    const1 = matriz([[0,0],[1,1]]);
+    return const1;
+}
 
 
