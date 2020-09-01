@@ -34,6 +34,26 @@ function matriz(z) {
     return z;
 }
 
+// creates an array from the functions's parameters
+function matrizn() {
+    n = arguments.length;
+    console.log("n = " + n);
+    var data = Array.from(Array(1),() => new Array(n));
+// the benefit from creating array this way is a.length = number of rows and a[0].length = number of columns
+    for (var i = 0; i < n; i++) { data[0][i] = arguments[i];}
+    return matriz(data);
+}
+
+// an array with data from a to b
+function vet(a, b) {
+    var data = Array.from(Array(1),() => new Array(b-a+1));
+    // the benefit from creating array this way is a.length = number of rows and a[0].length = number of columns
+    for (var i = 0; i < data[0].length; i++) {
+        data[0][i]= a + i;
+    }
+    return matrizn(data);
+}
+
 // multiply two matricies a and b
 function matrizmult(a, b) {
     var data = [];  // maybe change this to array of array

@@ -172,17 +172,7 @@ function aprox(x, z) {
   return x;
 }
 
-// creates an array from the functions's parameters 
-function matrizn() {
-  n = arguments.length;
-  console.log("n = " + n);
-  var data = Array.from(Array(1),() => new Array(n));
-// the benefit from creating array this way is a.length = number of rows and a[0].length = number of columns  
-  for (var i = 0; i < n; i++) { data[0][i] = arguments[i];}
-  return matriz(data);
-}
-
-// an array with a random walk with expected value ex 
+// an array with a random walk with expected value ex
 function pale(n,ex) {
   if (ex == undefined) { ex = 0; }
   var x = [];
@@ -193,16 +183,6 @@ function pale(n,ex) {
   var xx = aprox(x, 2);
   console.log(xx);
   return xx;
-}
-
-// an array with data from a to b
-function vet(a, b) {
-  var data = Array.from(Array(1),() => new Array(b-a+1));
-  // the benefit from creating array this way is a.length = number of rows and a[0].length = number of columns  
-  for (var i = 0; i < data[0].length; i++) {
-    data[0][i]= a + i;
-  }
-  return matrizn(data);
 }
 
 // counts the number of elements b in a given array a
