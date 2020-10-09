@@ -237,3 +237,41 @@ function transposta(a) {
     }
     return matriz(data);
 }
+
+function deter(a){
+    determinante = (a[0][0]*a[1][1])-(1*(a[0][1]*a[1][0]));
+    return determinante;
+}
+
+function csl(a1,a2,b1,b2,c1,c2){
+    //a1 = 3;
+    //a2 = 1;
+    //b1 = -2;
+    //b2 = -4;
+    //c1 = 4;
+    //c2 = 2;
+    D = matriz([[a1,b1],[a2,b2]]);
+    //D[0][0] = a1;
+    //D[0][1] = b1
+    //D[1][0] = a2;
+    //D[1][1] = b2;
+    Dx = matriz([[c1,b1],[c2,b2]]);
+    //Dx[0][0] = c1;
+    //Dx[0][1] = b1
+    //Dx[1][0] = c2;
+    //Dx[1][1] = b2;
+    Dy = matriz([[a1,c1],[a2,c2]]);
+    //Dy[0][0] = a1;
+    //Dy[0][1] = c1
+    //Dy[1][0] = a2;
+    //Dy[1][1] = c2;
+
+    D = deter(D);
+    Dx = deter(Dx);
+    Dy = deter(Dy);
+
+    x = Dx/D;
+    y = Dy/D;
+
+    //return D;
+}
