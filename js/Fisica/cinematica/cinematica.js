@@ -1,8 +1,3 @@
-//Função velocidade média
-function vmed(s,t){
-    return (s/t);
-}
-
 //Função Espaço Percorrido
 function deltas(s0, s){
     return ds=s-s0;
@@ -14,9 +9,10 @@ function deltat(t0, t){
 }
 
 //Função Velocidade Média
-function vmed(){
-    return ds/dt;
+function vmed(s,t){
+    return (s/t);
 }
+
 //Função Aceleração
 function acel(v, v0, t, t0) {
     return (v-v0)/(t-t0)+'m/s²';
@@ -87,7 +83,7 @@ function mruvfhp(s0,v0, t, a){
     return plot(x,s);
 }
 //Função Gráfico para velocidade em MRUV
-function mruvvel(s0,s,a){
+function mruvvelp(s0,s,a){
     var vf = new Array();
     var x = new Array();
     var v = new Array();
@@ -101,18 +97,43 @@ function mruvvel(s0,s,a){
     }
     return plot(x,vf);
 }
+
+function mruvvel(s0,s,a){
+    var vf = new Array();
+    var x = new Array();
+    var v = new Array();
+    var index = 0;
+    for(var i=0;i<s;i++){
+        v=index;
+        vf[index]=Math.sqrt(2*a*(index-s0));
+        x[index]=i;
+        index++;
+        console.log(vf[i]);
+    }
+    return vf;
+}
+//Função Inércia
+//Função em desenvolvimento
 function inercia(m,a) {
     return f=m*a;
 }
 
-//Movimento Circular
-//Velocidade Media
+
+//Movimento Harmônico Simples (MHS)
+
+//Velocidade Média
+//Função em desenvolvimento
 function vmmv(s,t){
     return v=s/t;
 }
+//Velocidade Angular
+//Função em desenvolvimento
 function van(t){
     return w=(2*Math.PI)/t;
 }
+
+//Função Período
+//Função em desenvolvimento
 function periodo(t){
     return t=1/f;
 }
