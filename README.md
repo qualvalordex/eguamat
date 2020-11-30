@@ -30,8 +30,8 @@
     <a href="https://dev.to/eguatech"><img src="https://img.shields.io/badge/DEV.TO-%230A0A0A.svg?&style=for-the-badge&logo=dev-dot-to&logoColor=white" height=22> </a>
   </p>
 </p>
-## Introdução
 
+## Introdução
 - **Simples e Completa.** Podendo ser usadas por pessoas com ou sem experiência em programação.
 - **Totalmente em Português.** Desenvolvida totalmente em português para quebrar a barreira do inglês.
 - **Grátis.** Sem planos, sem limitações e sem propaganda.
