@@ -31,18 +31,19 @@ if (!(foo == false || bar == false)) {
   //...
 }
 ```
-Vamos criar uma função prática para exemplificar melhor o processo. Nesse exemplo a função será responsável por converter as coordenadas cartesianas de um ponto P em coordenadas polares
+Vamos criar uma função prática para exemplificar melhor o processo. Nesse exemplo a função será responsável por converter as coordenadas polares de um ponto P em coordenadas cartesianas.
+Começando por definir quais os elementos de entrada são necessários na função, neste caso rão "r" e "theta".
 ```javascript
-function exemplo(x,y){
+function exemplo(r,theta){
   
   }
 ```
-Após o desenvolvimento ser concluído, é necessário ter a build web do projeto, que é feita com o comando: 
+E dentro do escopo da função, o cálculo a ser realizado
 ```javascript
 function exemplo(x,y){
-  rho = raizq(pot(x,2)+pot(y,2));
-  tg = y/x;
-  return ['rho: '+p, 'theta: '+tg];
+  x = r*cos(theta)
+  y = r*cos(theta)
+  return ['Coordenada X: '+ x, ' Coordenada Y: '+ y];
   }
 ```
 
