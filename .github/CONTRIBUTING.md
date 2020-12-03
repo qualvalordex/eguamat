@@ -20,8 +20,12 @@ Portanto temos as seguintes recomendações:
 | [Como é desenvolvida uma linguagem de programação?](https://pt.stackoverflow.com/questions/124436/como-%C3%A9-desenvolvida-uma-linguagem-de-programa%C3%A7%C3%A3o#:~:text=Criar%20uma%20linguagem%20de%20programa%C3%A7%C3%A3o,%C3%A9%20algo%20conceitual%2C%20%C3%A9%20abstrata.) | [Tutorial criando uma linguagem de programação em Python](https://www.youtube.com/watch?v=9tSuJzwe9Ok&list=PLP7hn9TNf1CEl8A8jQfZSRYcgUIqBhIJU) |
 | [Criando linguagem de programação em Node.js](https://repl.it/talk/learn/Making-your-own-programming-language-with-NodeJS/45779) | [Criando uma linguagem de programação em JavaScript](https://youtu.be/YpT-GpcHf2g) |
 
-#### Implementação de Função
+#### Implementação de Função Exemplo
 ```javascript
+function exemplo(a,b){
+  
+  }
+
 if (!(foo == false || bar == false)) {
   //...
 }
