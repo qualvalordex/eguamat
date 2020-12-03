@@ -31,15 +31,19 @@ if (!(foo == false || bar == false)) {
   //...
 }
 ```
-Vamos criar uma função prática para exemplificar melhor o processo. Nesse exemplo a função será responsável por 
+Vamos criar uma função prática para exemplificar melhor o processo. Nesse exemplo a função será responsável por converter as coordenadas cartesianas de um ponto P em coordenadas polares
 ```javascript
-function exemplo(){
+function exemplo(x,y){
   
   }
 ```
 Após o desenvolvimento ser concluído, é necessário ter a build web do projeto, que é feita com o comando: 
-```sh
-npm run build-web
+```javascript
+function exemplo(x,y){
+  rho = raizq(pot(x,2)+pot(y,2));
+  tg = y/x;
+  return ['rho: '+p, 'theta: '+tg];
+  }
 ```
 
 > Sugerimos que você abra o arquivo `index.html` em seu navegador para testar as funcionalidades implementadas por você! 
