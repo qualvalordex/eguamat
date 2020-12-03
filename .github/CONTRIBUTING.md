@@ -26,10 +26,6 @@ Para a criação de uma função personalizada, basta utilizar o comando ```java
 function exemplo(){
   
   }
-
-if (!(foo == false || bar == false)) {
-  //...
-}
 ```
 Vamos criar uma função prática para exemplificar melhor o processo. Nesse exemplo a função será responsável por converter as coordenadas polares de um ponto P em coordenadas cartesianas.
 Começando por definir quais os elementos de entrada são necessários na função, neste caso rão "r" e "theta".
@@ -40,7 +36,7 @@ function exemplo(r,theta){
 ```
 E dentro do escopo da função, o cálculo a ser realizado
 ```javascript
-function exemplo(x,y){
+function exemplo(r,theta){
   x = r*cos(theta)
   y = r*cos(theta)
   return ['Coordenada X: '+ x, ' Coordenada Y: '+ y];
