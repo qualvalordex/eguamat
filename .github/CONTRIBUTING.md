@@ -21,8 +21,9 @@ Portanto temos as seguintes recomendações:
 | [Criando linguagem de programação em Node.js](https://repl.it/talk/learn/Making-your-own-programming-language-with-NodeJS/45779) | [Criando uma linguagem de programação em JavaScript](https://youtu.be/YpT-GpcHf2g) |
 
 #### Implementação de Função Exemplo
+Para a criação de uma função personalizada, basta utilizar o comando ```javascript function``` e definir o nome para a nova função, então deve-se inserir parêntesis "()", onde serão definidos os valores de entrada para execução da função, se necessários, e chaves "{}", onde serão inseridos os comandos que a função executará ao ser iniciada.
 ```javascript
-function exemplo(a,b){
+function exemplo(){
   
   }
 
@@ -30,7 +31,12 @@ if (!(foo == false || bar == false)) {
   //...
 }
 ```
-
+Vamos criar uma função prática para exemplificar melhor o processo. Nesse exemplo a função será responsável por 
+```javascript
+function exemplo(){
+  
+  }
+```
 Após o desenvolvimento ser concluído, é necessário ter a build web do projeto, que é feita com o comando: 
 ```sh
 npm run build-web
