@@ -1,27 +1,27 @@
 # Guia de contribuição do Console EguaMat
 
-Olá! Estamos muito felizes que você quer contribuir com nosso projeto. Antes de contribuir, por favor tenha certeza de seguir todas as recomendações e submeter.
+Olá! Obrigado pela iniciativa em contribuir com nosso projeto. Antes de contribuir, por favor tenha certeza de seguir todas as recomendações e submeter.
 
 ## Introdução
 
-O EguaMat é uma ferramenta da Linguagem Egua com grande foco nas áreas educacional e cinetífica, portando para implementar uma função nova no EguaMat, ou aprimorar quaisquer funções existentes, são exigidas algumas etapas para que sua contribuição seja aceita. 
+O EguaMat é uma ferramenta da Linguagem Egua com grande foco nas áreas educacional e cinetífica, portanto para implementar uma função nova no EguaMat, ou aprimorar quaisquer funções existentes, são exigidas algumas etapas para que sua contribuição seja aceita. 
 
 ## Contribuindo com funções para o EguaMat
 
 ### Parte Computacional
 
-Quando se trata da logística computacional para a implementação de funções no EguaMat, o usuário deve possuir um conhecimento razoável me Javascript para compreender adequadamente a sintaxe e os padrões existentes nas funções já implementadas.
+Quando se trata da logística computacional para a implementação de funções no EguaMat, o usuário deve possuir um conhecimento razoável de Javascript para compreender adequadamente a sintaxe e os padrões existentes nas funções já implementadas.
 Caso deseja aprender um pouco mais sobre Javascript, recomendamos as seguintes obras, as mesmas são apresentam conteúdo suficiente para que o usuário contribua com o progresso do EguaMat.
 
 Portanto temos as seguintes recomendações:
 
-| Artigos | Vídeos |
+| Livros | Vídeos |
 |---|---|
-| [Como é desenvolvida uma linguagem de programação?](https://pt.stackoverflow.com/questions/124436/como-%C3%A9-desenvolvida-uma-linguagem-de-programa%C3%A7%C3%A3o#:~:text=Criar%20uma%20linguagem%20de%20programa%C3%A7%C3%A3o,%C3%A9%20algo%20conceitual%2C%20%C3%A9%20abstrata.) | [Tutorial criando uma linguagem de programação em Python](https://www.youtube.com/watch?v=9tSuJzwe9Ok&list=PLP7hn9TNf1CEl8A8jQfZSRYcgUIqBhIJU) |
-| [Criando linguagem de programação em Node.js](https://repl.it/talk/learn/Making-your-own-programming-language-with-NodeJS/45779) | [Criando uma linguagem de programação em JavaScript](https://youtu.be/YpT-GpcHf2g) |
+| [JavaScript: O Guia Definitivo](https://www.amazon.com.br/JavaScript-Guia-Definitivo-David-Flanagan/dp/856583719X/ref=asc_df_856583719X/?tag=googleshopp00-20&linkCode=df0&hvadid=379765802390&hvpos=&hvnetw=g&hvrand=10608478598509906087&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=1031424&hvtargid=pla-812161948788&psc=1) | [JavaScript Tutorial for Beginners](https://www.youtube.com/watch?v=W6NZfCO5SIk&ab_channel=ProgrammingwithMosh) |
+| [JavaScript: The Good Parts](https://www.amazon.com.br/JavaScript-Good-Parts-English-ebook/dp/B0026OR2ZY/ref=asc_df_B0026OR2ZY/?tag=googleshopp00-20&linkCode=df0&hvadid=379715983095&hvpos=&hvnetw=g&hvrand=10608478598509906087&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=1031424&hvtargid=pla-406644901335&psc=1) | [Learn JavaScript - Full Course for Beginners](https://www.youtube.com/watch?v=PkZNo7MFNFg&ab_channel=freeCodeCamp.org) |
 
 #### Implementação de Função Exemplo
-Para a criação de uma função personalizada, basta utilizar o comando ```javascript function``` e definir o nome para a nova função, então deve-se inserir parêntesis "()", onde serão definidos os valores de entrada para execução da função, se necessários, e chaves "{}", onde serão inseridos os comandos que a função executará ao ser iniciada.
+Para a criação de uma função personalizada, basta utilizar o comando ```function``` e definir o nome para a nova função, então deve-se inserir parêntesis ```()```, onde serão definidos os valores de entrada para execução da função, se necessários, e chaves ```{}```, onde serão inseridos os comandos que a função executará ao ser iniciada.
 ```javascript
 function exemplo(){
   
@@ -39,35 +39,32 @@ E dentro do escopo da função, o cálculo a ser realizado
 function exemplo(r,theta){
   x = r*cos(theta)
   y = r*cos(theta)
+  }
+```
+Por último será definido o que a função retornará ao usuário e ao programa, para isso basta utilizar o comando `return`
+```javascript
+function exemplo(r,theta){
+  x = r*cos(theta)
+  y = r*cos(theta)
   return ['Coordenada X: '+ x, ' Coordenada Y: '+ y];
   }
 ```
-
 > Sugerimos que você abra o arquivo `index.html` em seu navegador para testar as funcionalidades implementadas por você! 
 
-Solicitamos também que você atualize a chave `version` do arquivo `package.json`, pois só assim a ferramenta de CD será capaz de implementar suas atualizações em produção.
+### Parte Científica
 
-Por fim, seu PR deve ser efetuado na branch `desenvolvimento` e solicitamos que você abra uma issue no repositório [Docs](https://github.com/eguatech/docs) informando a sua implementação e uma breve explicação para ser adicionado na documentação.
-
+Visando manter o aspecto científico e educacional da ferramenta EguaMat, faz-se necessário que o contribuinte também apresente qual é a base cinetífica para a função que está sendo implementada por este. Para tal, deve ser inserida na [documentação](https://egua.tech/docs/eguamat/) a explicação da função, assim como a sua função ou equação que lhe dá origem. As mudanças na documentação do EguaMat podem ser realizada acessando seu [repositório](https://github.com/eguatech/docs/tree/master/docs/eguamat). Após suas contribuir, crie uma `Pull Request` na branche `desenvolvimento` para que esta possa ser aceita.
 
 ## Resumo
 
 De maneira bem resumida eis o que precisa ser feito:
 
-- [ ] Montar o ambiente.
+- [ ] Clonar repositório do EguaMat.
 
-- [ ] Efetuar as suas alterações.
+- [ ] Efetuar suas alterações.
 
-- [ ] Executar os testes unitários.
+- [ ] Executar os testes locais.
 
-- [ ] Executar a build para web do projeto.
+- [ ] Atualização documentação.
 
-- [ ] Testar localmente suas alterações.
-
-- [ ] Atualizar versão no arquivo `package.json`
-
-- [ ] Abrir issue no repositório Docs.
-
-## Agradecimentos
-
-Desde já agradecemos de coração pela sua contribuição ao projeto. xD
+- [ ] Criar Pull Request.
