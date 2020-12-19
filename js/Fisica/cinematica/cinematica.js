@@ -134,6 +134,6 @@ function van(t){
 
 //Função Período
 //Função em desenvolvimento
-function periodo(t){
+function periodo(f){
     return t=1/f;
 }
