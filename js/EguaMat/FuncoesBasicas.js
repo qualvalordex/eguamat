@@ -309,3 +309,14 @@ function carregar() {
   input.click();
   return "";
 }
+function nula(){
+  var nula = null;
+  return nula;
+}
+
+//Função Anônima
+function minha(a,b,c){
+  var mF = function(a,b) {return c};
+  var x = mF(a,b);
+  return x;
+}

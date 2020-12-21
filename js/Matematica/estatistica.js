@@ -86,7 +86,7 @@ function covar(array1, array2) {
 
 // calculates the coefficient of variation for an array
 function coefvar(array) {
-    return devpad(array, 1) / ex(array);
+    return devpad(array, 1) / media(array);
 };
 
 // calculates the pearson's correlation coefficient
