@@ -36,7 +36,7 @@ function mrufhp(s0,v, t){
     var s = new Array();
     var x = new Array();
     var index = 0;
-    for(var i=0;i<t;i++){
+    for(var i=0;i<=t;i++){
         s[index]=s0+v*i;
         x[index] = i;
         index++;
@@ -134,6 +134,6 @@ function van(t){
 
 //Função Período
 //Função em desenvolvimento
-function periodo(t){
+function periodo(f){
     return t=1/f;
 }
