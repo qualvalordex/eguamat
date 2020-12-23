@@ -329,6 +329,6 @@ function comp(a){
 
 //Função Floor
 function minaprox(a){
-  var minaprox = Math.floor(x);
+  var minaprox = Math.floor(a);
   return minaprox;
 }
