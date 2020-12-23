@@ -320,3 +320,9 @@ function minha(a,b,c){
   var x = mF(a,b);
   return x;
 }
+
+//Função Comprimento
+function comp(a){
+  var comp = a.length;
+  return comp;
+}
