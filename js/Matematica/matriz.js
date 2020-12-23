@@ -240,7 +240,7 @@ function transposta(a) {
 
 function deter(a){
     determinante = (a[0][0]*a[1][1])-(1*(a[0][1]*a[1][0]));
-    return determinante;
+    //return determinante;
 }
 
 function csl(a1,a2,b1,b2,c1,c2){
@@ -259,5 +259,5 @@ function csl(a1,a2,b1,b2,c1,c2){
     x = Dx/D;
     y = Dy/D;
 
-    //return D;
+    return x;
 }
